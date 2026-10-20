@@ -1,0 +1,415 @@
+<div class="progress"><i id="progress-bar"></i></div>
+<div class="deck" id="deck">
+
+<!-- 01 cover -->
+<section class="sheet" id="s01" data-title="Cover">
+  <div class="sheet-inner">
+    <header class="sheet-head">
+      <div class="eyebrow"><b>Sheet 01</b> · Egg drop challenge · 6 to 7 floors · <span id="cover-date"></span></div>
+      <div class="byline" id="cover-team"></div>
+      <h1 id="cover-title"></h1>
+      <p class="lede" id="cover-tagline"></p>
+    </header>
+    <div class="sheet-body">
+      <div class="cover-grid">
+        <div class="stack">
+          <p id="cover-summary"></p>
+          <div class="kpis" id="cover-kpis"></div>
+          <div id="cover-stamp"></div>
+          <p class="note">Keys: <span class="kbd">←</span> <span class="kbd">→</span> move between sheets, <span class="kbd">I</span> opens the index. Drag the model to rotate, pinch or <span class="kbd">⌘</span>/<span class="kbd">Ctrl</span> + wheel to zoom.</p>
+        </div>
+        <div>
+          <div class="stage" data-view="model" data-auto="1" id="stage-cover"><div class="placeholder">3D model</div><div class="labels"></div></div>
+        </div>
+      </div>
+    </div>
+    <footer class="title-block"></footer>
+  </div>
+</section>
+
+<!-- 02 brief -->
+<section class="sheet" id="s02" data-title="The brief and the five rules">
+  <div class="sheet-inner">
+    <header class="sheet-head">
+      <div class="eyebrow"><b>Sheet 02</b> · Requirements</div>
+      <h2>The brief and the five rules</h2>
+      <p class="lede">What the assignment asks for, and the value this design delivers against each line.</p>
+    </header>
+    <div class="sheet-body">
+      <div class="scroll-x"><table class="data" id="rules-table"></table></div>
+      <div class="cols-2">
+        <div class="callout" id="brief-worstcase"></div>
+        <div class="callout" id="brief-cost"></div>
+      </div>
+    </div>
+    <footer class="title-block"></footer>
+  </div>
+</section>
+
+<!-- 03 physics -->
+<section class="sheet" id="s03" data-title="Physics of the fall">
+  <div class="sheet-inner">
+    <header class="sheet-head">
+      <div class="eyebrow"><b>Sheet 03</b> · Analysis</div>
+      <h2>Physics of the fall</h2>
+      <p class="lede" id="physics-lede"></p>
+    </header>
+    <div class="sheet-body">
+      <div class="cols-2 wide-left">
+        <div class="stack">
+          <div class="blueprint" id="physics-chart"></div>
+          <div class="kpis" id="physics-kpis"></div>
+        </div>
+        <div class="stack">
+          <div class="formula" id="physics-formulas"></div>
+          <div class="calc" id="physics-calc"></div>
+        </div>
+      </div>
+    </div>
+    <footer class="title-block"></footer>
+  </div>
+</section>
+
+<!-- 04 design -->
+<section class="sheet" id="s04" data-title="The design in 3D">
+  <div class="sheet-inner">
+    <header class="sheet-head">
+      <div class="eyebrow"><b>Sheet 04</b> · Design</div>
+      <h2 id="design-title"></h2>
+      <p class="lede" id="design-lede"></p>
+    </header>
+    <div class="sheet-body">
+      <div class="cols-2 wide-left">
+        <div class="stack">
+          <div class="stage" data-view="model" data-auto="0" id="stage-model"><div class="placeholder">3D model</div><div class="labels"></div></div>
+          <div class="stage-bar">
+            <button class="btn" id="btn-labels">Labels</button>
+            <button class="btn" id="btn-xray">X-ray</button>
+            <button class="btn" id="btn-reset-view">Reset view</button>
+            <button class="btn" id="btn-zoom-in">Zoom +</button>
+            <button class="btn" id="btn-zoom-out">Zoom −</button>
+            <span class="spacer"></span>
+            <label class="stage-note" for="explode">Exploded view</label>
+            <input type="range" id="explode" min="0" max="100" value="0" style="width:140px">
+          </div>
+        </div>
+        <div class="stack">
+          <div class="figure-label">Why this design</div>
+          <ul class="list" id="design-why"></ul>
+          <div class="figure-label">Parts</div>
+          <div class="scroll-x"><table class="data compact" id="design-parts"></table></div>
+        </div>
+      </div>
+    </div>
+    <footer class="title-block"></footer>
+  </div>
+</section>
+
+<!-- 05 blueprint -->
+<section class="sheet" id="s05" data-title="Blueprint: sketch it on paper">
+  <div class="sheet-inner">
+    <header class="sheet-head">
+      <div class="eyebrow"><b>Sheet 05</b> · Drawing · third-angle projection · all dimensions in cm</div>
+      <h2>Blueprint: sketch it on paper</h2>
+      <p class="lede">Three views plus an isometric, drawn to scale on a 1 cm grid. Copy them onto graph paper with a ruler.</p>
+    </header>
+    <div class="sheet-body">
+      <div class="cols-2 wide-left">
+        <div class="blueprint" id="blueprint"></div>
+        <div class="stack">
+          <div class="figure-label">How to draw it</div>
+          <ol class="steps compact" id="sketch-steps"></ol>
+          <div class="figure-label">What each view shows</div>
+          <div class="scroll-x"><table class="data compact" id="sketch-views"></table></div>
+        </div>
+      </div>
+    </div>
+    <footer class="title-block"></footer>
+  </div>
+</section>
+
+<!-- 06 measurements -->
+<section class="sheet" id="s06" data-title="Measurements and volume">
+  <div class="sheet-inner">
+    <header class="sheet-head">
+      <div class="eyebrow"><b>Sheet 06</b> · Rule 2 and rule 3</div>
+      <h2>Measurements and volume</h2>
+      <p class="lede">Length, width and height of the whole device as it leaves your hands. Every side must stay under 30 cm.</p>
+    </header>
+    <div class="sheet-body">
+      <div class="cols-2">
+        <div class="stack">
+          <div class="kpis" id="dims-kpis"></div>
+          <div class="formula" id="volume-formula"></div>
+          <div class="blueprint" id="dims-bars"></div>
+        </div>
+        <div class="stack">
+          <div class="figure-label">How to measure it on drop day</div>
+          <ol class="list" id="measure-how"></ol>
+          <div class="callout" id="dims-margin"></div>
+        </div>
+      </div>
+    </div>
+    <footer class="title-block"></footer>
+  </div>
+</section>
+
+<!-- 07 mass -->
+<section class="sheet" id="s07" data-title="Mass budget">
+  <div class="sheet-inner">
+    <header class="sheet-head">
+      <div class="eyebrow"><b>Sheet 07</b> · Rule 4</div>
+      <h2>Mass budget</h2>
+      <p class="lede" id="mass-lede"></p>
+    </header>
+    <div class="sheet-body">
+      <div class="cols-2 wide-left">
+        <div class="scroll-x"><table class="data" id="mass-table"></table></div>
+        <div class="stack">
+          <div class="kpis" id="mass-kpis"></div>
+          <div class="blueprint" id="mass-bar"></div>
+          <div class="callout" id="mass-note"></div>
+        </div>
+      </div>
+    </div>
+    <footer class="title-block"></footer>
+  </div>
+</section>
+
+<!-- 08 materials -->
+<section class="sheet" id="s08" data-title="Materials and cost">
+  <div class="sheet-inner">
+    <header class="sheet-head">
+      <div class="eyebrow"><b>Sheet 08</b> · Rule 5 · bill of materials</div>
+      <h2>Materials and cost</h2>
+      <p class="lede" id="materials-lede"></p>
+    </header>
+    <div class="sheet-body">
+      <div class="scroll-x"><table class="data" id="materials-table"></table></div>
+      <div class="kpis" id="materials-kpis"></div>
+    </div>
+    <footer class="title-block"></footer>
+  </div>
+</section>
+
+<!-- 09 build -->
+<section class="sheet" id="s09" data-title="Build sequence">
+  <div class="sheet-inner">
+    <header class="sheet-head">
+      <div class="eyebrow"><b>Sheet 09</b> · Assembly · <span id="build-time"></span></div>
+      <h2>Build sequence</h2>
+      <p class="lede">Click a step to see its parts fly into the model. Build in this order; every step tells you what to measure and how to attach it.</p>
+    </header>
+    <div class="sheet-body">
+      <div class="cols-2 wide-right">
+        <div class="stack" style="max-height: 72vh; overflow: auto; padding-right: 4px;">
+          <ol class="steps" id="build-steps"></ol>
+        </div>
+        <div class="stack">
+          <div class="stage tall" data-view="build" id="stage-build"><div class="placeholder">3D build view</div><div class="labels"></div></div>
+          <div class="stage-bar">
+            <button class="btn" id="btn-step-prev">← Previous</button>
+            <button class="btn primary" id="btn-step-next">Next step →</button>
+            <span class="stage-note" id="build-counter"></span>
+          </div>
+          <div class="callout" id="build-detail"></div>
+        </div>
+      </div>
+    </div>
+    <footer class="title-block"></footer>
+  </div>
+</section>
+
+<!-- 10 drop day -->
+<section class="sheet" id="s10" data-title="Drop-day layout">
+  <div class="sheet-inner">
+    <header class="sheet-head">
+      <div class="eyebrow"><b>Sheet 10</b> · Execution</div>
+      <h2>Drop-day layout</h2>
+      <p class="lede" id="drop-lede"></p>
+    </header>
+    <div class="sheet-body">
+      <div class="cols-2">
+        <div class="stack">
+          <div class="site" id="site-diagram"></div>
+          <div class="callout" id="release-technique"></div>
+        </div>
+        <div class="stack">
+          <div class="figure-label">Roles</div>
+          <div class="scroll-x"><table class="data compact" id="drop-roles"></table></div>
+          <div class="figure-label">Sequence of calls</div>
+          <ol class="steps compact" id="drop-sequence"></ol>
+          <div class="figure-label">Safety</div>
+          <ul class="list" id="drop-safety"></ul>
+        </div>
+      </div>
+    </div>
+    <footer class="title-block"></footer>
+  </div>
+</section>
+
+<!-- 11 simulation -->
+<section class="sheet" id="s11" data-title="Drop simulation">
+  <div class="sheet-inner">
+    <header class="sheet-head">
+      <div class="eyebrow"><b>Sheet 11</b> · Animation · live telemetry from the physics model</div>
+      <h2>Drop simulation</h2>
+      <p class="lede" id="sim-lede"></p>
+    </header>
+    <div class="sheet-body">
+      <div class="cols-2 wide-left">
+        <div class="stack">
+          <div class="stage" data-view="drop" id="stage-drop">
+            <div class="placeholder">Drop simulation</div>
+            <div class="labels"></div>
+            <div class="telemetry">
+              <span>Height</span><span class="big" data-tel="h">—</span>
+              <span>Speed</span><span class="big" data-tel="v">—</span>
+              <span>Time</span><span data-tel="t">—</span>
+              <span>Load on egg</span><span class="big" data-tel="g">—</span>
+              <span>Peak</span><span data-tel="gmax">—</span>
+              <span class="phase" data-tel="phase">READY</span>
+            </div>
+          </div>
+          <div class="stage-bar">
+            <button class="btn primary" id="btn-drop-play">Play</button>
+            <button class="btn" id="btn-drop-replay">Replay</button>
+            <button class="btn active" id="btn-drop-slow">Slow motion at impact</button>
+            <span class="spacer"></span>
+            <span class="seg">
+              <button class="btn active" id="btn-cam-follow">Follow</button>
+              <button class="btn" id="btn-cam-wide">Wide</button>
+            </span>
+          </div>
+        </div>
+        <div class="stack">
+          <div class="figure-label">What you are watching</div>
+          <ol class="steps compact" id="sim-phases"></ol>
+          <div class="kpis" id="sim-kpis"></div>
+        </div>
+      </div>
+    </div>
+    <footer class="title-block"></footer>
+  </div>
+</section>
+
+<!-- 12 worst case -->
+<section class="sheet" id="s12" data-title="Any way it lands">
+  <div class="sheet-inner">
+    <header class="sheet-head">
+      <div class="eyebrow"><b>Sheet 12</b> · Worst case · assume it tumbles</div>
+      <h2>Any way it lands</h2>
+      <p class="lede" id="worst-lede"></p>
+    </header>
+    <div class="sheet-body">
+      <div class="cols-2 wide-left">
+        <div class="stack">
+          <div class="scroll-x"><table class="data" id="faces-table"></table></div>
+        </div>
+        <div class="stack">
+          <div class="blueprint" id="faces-diagram"></div>
+          <div class="calc" id="worst-calc"></div>
+        </div>
+      </div>
+    </div>
+    <footer class="title-block"></footer>
+  </div>
+</section>
+
+<!-- 13 test ladder -->
+<section class="sheet" id="s13" data-title="Test ladder and reset between drops">
+  <div class="sheet-inner">
+    <header class="sheet-head">
+      <div class="eyebrow"><b>Sheet 13</b> · Multi-height testing · same device, same egg position, every time</div>
+      <h2>Test ladder and reset between drops</h2>
+      <p class="lede" id="ladder-lede"></p>
+    </header>
+    <div class="sheet-body">
+      <div class="cols-2 wide-left">
+        <div class="stack">
+          <div class="scroll-x"><table class="data" id="ladder-table"></table></div>
+          <div class="blueprint" id="ladder-chart"></div>
+        </div>
+        <div class="stack">
+          <div class="figure-label">Reset procedure after every drop</div>
+          <ol class="steps compact" id="reset-steps"></ol>
+          <div class="figure-label">Spares bag</div>
+          <div class="scroll-x"><table class="data compact" id="spares-table"></table></div>
+        </div>
+      </div>
+    </div>
+    <footer class="title-block"></footer>
+  </div>
+</section>
+
+<!-- 14 egg access + failure modes -->
+<section class="sheet" id="s14" data-title="Egg access and failure modes">
+  <div class="sheet-inner">
+    <header class="sheet-head">
+      <div class="eyebrow"><b>Sheet 14</b> · Reusability · bench tests before the first real drop</div>
+      <h2>Egg access and failure modes</h2>
+      <p class="lede" id="access-lede"></p>
+    </header>
+    <div class="sheet-body">
+      <div class="cols-2">
+        <div class="stack">
+          <div class="figure-label">Open · seat · close</div>
+          <ol class="steps compact" id="access-steps"></ol>
+          <div class="callout" id="access-feature"></div>
+          <div class="figure-label">Bench tests before the first drop</div>
+          <ol class="steps compact" id="test-steps"></ol>
+        </div>
+        <div class="stack">
+          <div class="figure-label">Failure modes and what prevents them</div>
+          <div class="scroll-x"><table class="data compact" id="failure-table"></table></div>
+        </div>
+      </div>
+    </div>
+    <footer class="title-block"></footer>
+  </div>
+</section>
+
+<!-- 15 compliance -->
+<section class="sheet" id="s15" data-title="Compliance and final checklist">
+  <div class="sheet-inner">
+    <header class="sheet-head">
+      <div class="eyebrow"><b>Sheet 15</b> · Sign-off</div>
+      <h2>Compliance and final checklist</h2>
+      <p class="lede">Every rule, our value, pass or fail. Then the checklist to run through before you climb the stairs.</p>
+    </header>
+    <div class="sheet-body">
+      <div class="cols-2">
+        <div class="stack">
+          <div class="scroll-x"><table class="data" id="compliance-table"></table></div>
+          <div class="figure-label">Egg preparation</div>
+          <ul class="checklist" id="egg-prep"></ul>
+        </div>
+        <div class="stack">
+          <div class="figure-label">Drop-day checklist</div>
+          <ul class="checklist" id="final-checklist"></ul>
+          <div class="figure-label">Other concepts the panel considered</div>
+          <div class="scroll-x"><table class="data compact" id="alternatives-table"></table></div>
+        </div>
+      </div>
+    </div>
+    <footer class="title-block"></footer>
+  </div>
+</section>
+
+</div>
+
+<nav class="hud" aria-label="Sheet navigation">
+  <button class="btn" id="hud-prev" aria-label="Previous sheet">←</button>
+  <span class="counter" id="hud-counter">01 / 15</span>
+  <button class="btn" id="hud-next" aria-label="Next sheet">→</button>
+  <button class="btn" id="hud-index" aria-label="Sheet index">Index</button>
+  <button class="btn" id="hud-theme" aria-label="Toggle light or dark">◐</button>
+</nav>
+
+<div class="index" id="index" hidden>
+  <div class="index-panel">
+    <div class="eyebrow"><b>Index</b> · 15 sheets</div>
+    <ol id="index-list"></ol>
+    <div><button class="btn" id="index-close">Close</button></div>
+  </div>
+</div>

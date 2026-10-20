@@ -1,0 +1,271 @@
+{
+ "name": "Stack-Crush Box Mk2 (collar-stabilised layered crumple box)",
+ "concept": "A single-wall cardboard box (26 x 26 x 28 cm) with a flat 2 cm cardboard drag collar around the top rim, so the whole device is 28 x 28 x 28 cm. Inside, from the floor up: a 60 g rice ballast bag, a swappable \"cartridge\" of 9 inverted paper cups glued under a cardboard plate, a layer of egg-carton cells, then a 14.8 cm cradle box lined with egg-carton pulp in which the egg rides in a marked egg-carton cup glued into a pantyhose pocket that is tensioned to the eight cradle corners by rubber bands. Above the cradle: a second egg-carton layer, a plate and 9 short inverted cups, then the box flaps. Every one of the six faces and all edges/corners has 7 to 9 cm of soft crush path before anything reaches the cradle, and the cradle itself adds 1.75 to 3.75 cm of elastic travel, so the egg can never touch a hard part from any direction. The ballast and heavy bottom cartridge put the centre of mass about 11 cm up; the collar puts the centre of pressure near the top, which biases a base-first landing but is only a bonus. Honest number: a closed box at 0.69 kg only gets to about 11 m/s terminal velocity, so the crush layers, not drag, do the work.",
+ "orientation_strategy": "Bottom-weighted (60 g rice bag on the floor plus the heaviest crush cartridge at the base) gives a centre of mass roughly 11 cm above the base of a 28 cm device. The flat 28 x 28 cm collar at the top rim raises the centre of pressure to roughly 20 cm, so when the box tilts the drag acts above the mass and swings it back base-down, like a shuttlecock. Four-fold symmetry means there is no preferred tipping direction. This is an aid only: side, top, edge and corner impacts each have their own crush path and are rated below.",
+ "dims_cm": {
+  "L": 28,
+  "W": 28,
+  "H": 28
+ },
+ "volume_cm3": 21952,
+ "mass_budget_g": [
+  {
+   "item": "Outer cardboard box 26x26x28 (single-wall corrugated, cut down)",
+   "grams": 200
+  },
+  {
+   "item": "Drag collar, 2 layers corrugated, 28x28 outer / 26x26 inner",
+   "grams": 25
+  },
+  {
+   "item": "Bottom crush cartridge: 9 paper cups cut to 5 cm",
+   "grams": 45
+  },
+  {
+   "item": "Top crush layer: 9 paper cups cut to 4.3 cm",
+   "grams": 32
+  },
+  {
+   "item": "Egg-carton cell layers (bottom 3 cm, top 2.5 cm) + side strips + cradle lining",
+   "grams": 70
+  },
+  {
+   "item": "Two 24x24 cm cardboard spreader plates",
+   "grams": 56
+  },
+  {
+   "item": "Cradle box 14x14x10 cm interior + lid (corrugated)",
+   "grams": 43
+  },
+  {
+   "item": "Pantyhose pocket (15 cm of one leg)",
+   "grams": 10
+  },
+  {
+   "item": "8 rubber bands (size 64) for suspension",
+   "grams": 8
+  },
+  {
+   "item": "Marked egg-carton cradle cup + alignment mark",
+   "grams": 4
+  },
+  {
+   "item": "Crumpled newspaper side filler",
+   "grams": 40
+  },
+  {
+   "item": "Hot glue and tape",
+   "grams": 37
+  },
+  {
+   "item": "Ballast: 60 g rice in a sandwich bag",
+   "grams": 60
+  },
+  {
+   "item": "Raw large egg",
+   "grams": 60
+  }
+ ],
+ "total_mass_g": 690,
+ "materials": [
+  {
+   "item": "Cardboard shipping/grocery box, single-wall, at least 26x26x28 cm (cut down to size)",
+   "qty": "1 (+1 spare box or large flat sheet for plates, collar, cradle, spares)",
+   "source": "home / supermarket back room (free)",
+   "est_cost_usd": 0,
+   "est_mass_g": 350
+  },
+  {
+   "item": "Paper cups, 250 ml / 9 oz",
+   "qty": "1 pack of 50 (18 used, 18 pre-cut spares, rest for test rig)",
+   "source": "dollar store",
+   "est_cost_usd": 1.25,
+   "est_mass_g": 77
+  },
+  {
+   "item": "Pulp egg cartons (dozen size)",
+   "qty": "3 (2 used, 1 cut into spares)",
+   "source": "home kitchen / ask supermarket (free)",
+   "est_cost_usd": 0,
+   "est_mass_g": 70
+  },
+  {
+   "item": "Pantyhose or knee-high nylon, old pair",
+   "qty": "1 pair (one 15 cm leg section used, second leg is the spare)",
+   "source": "home (or dollar store $1.25)",
+   "est_cost_usd": 0,
+   "est_mass_g": 10
+  },
+  {
+   "item": "Rubber bands, size 64 (about 9 cm loop)",
+   "qty": "1 bag (8 used in suspension, 2 around the box, rest spares)",
+   "source": "dollar store",
+   "est_cost_usd": 1.25,
+   "est_mass_g": 10
+  },
+  {
+   "item": "Newspaper or junk mail",
+   "qty": "about 12 sheets (6 used, 6 spare)",
+   "source": "home (free)",
+   "est_cost_usd": 0,
+   "est_mass_g": 40
+  },
+  {
+   "item": "Hot-glue sticks (or white glue) and painter's/duct tape",
+   "qty": "4 sticks, 1 roll",
+   "source": "home craft drawer (free; $1.25 each at dollar store if missing)",
+   "est_cost_usd": 0,
+   "est_mass_g": 37
+  },
+  {
+   "item": "Uncooked rice (ballast) in a zip sandwich bag",
+   "qty": "60 g (about 4 tablespoons) + 1 bag",
+   "source": "home kitchen",
+   "est_cost_usd": 0.1,
+   "est_mass_g": 60
+  },
+  {
+   "item": "Permanent marker (for cradle mark, notch numbers, up-arrow)",
+   "qty": "1",
+   "source": "home",
+   "est_cost_usd": 0,
+   "est_mass_g": 0
+  },
+  {
+   "item": "Raw large eggs for the test ladder",
+   "qty": "6 (half dozen)",
+   "source": "supermarket",
+   "est_cost_usd": 2,
+   "est_mass_g": 60
+  },
+  {
+   "item": "Plastic grocery bag for carrying pre-cut spares",
+   "qty": "1",
+   "source": "home",
+   "est_cost_usd": 0,
+   "est_mass_g": 0
+  }
+ ],
+ "total_cost_usd": 4.6,
+ "protection_by_face": [
+  {
+   "face": "bottom",
+   "protection": "Box floor + 0.8 cm rice bag + 9 inverted 5 cm paper cups (crush to about 1.1 cm) + 3 cm egg-carton cell layer (crush to 1 cm) + 1 cm pulp lining inside cradle (crush 0.6 cm) + 1.75 cm pocket travel. Designed landing at 11.1 m/s.",
+   "stopping_distance_cm": 8.3,
+   "peak_g": 76
+  },
+  {
+   "face": "top",
+   "protection": "Box flaps + 9 inverted 4.3 cm paper cups (crush 3.3 cm) + 2.5 cm egg-carton layer (crush 1.7 cm) + cradle lining 0.6 cm + 1.75 cm pocket travel. Rated at tumbling speed 12.5 m/s.",
+   "stopping_distance_cm": 7.4,
+   "peak_g": 108
+  },
+  {
+   "face": "side",
+   "protection": "Box wall + 3 cm egg-carton cell strips (crush 2 cm) + 2.2 cm crumpled newspaper (crush 1.4 cm) + cradle lining 0.6 cm + 3 cm sideways pocket travel (3.75 cm across the short axis). Rated at 12.5 m/s.",
+   "stopping_distance_cm": 7,
+   "peak_g": 114
+  },
+  {
+   "face": "edge",
+   "protection": "Cardboard edge folds at low force, then about 8 cm diagonal of newspaper/carton cells (about 4.9 cm usable crush) + lining 0.6 cm + 2.2 cm diagonal pocket travel. Collar rim adds a first crumple step on top edges. Rated at 12.5 m/s.",
+   "stopping_distance_cm": 7.7,
+   "peak_g": 103
+  },
+  {
+   "face": "corner",
+   "protection": "Box corner collapses at low force, then about 9.6 cm diagonal of newspaper/carton cells to the cradle corner (about 5.8 cm usable crush) + lining 0.6 cm + 2.5 cm diagonal pocket travel. Rated at 12.5 m/s.",
+   "stopping_distance_cm": 8.9,
+   "peak_g": 89
+  }
+ ],
+ "egg_access": "Nothing above the cradle is glued to the box. Open: pull off the two vertical rubber bands, open the top flaps, lift out the top cup plate by its tape-loop handle, lift the cradle lid (top carton layer is glued to the lid), unhook the 4 upper suspension bands from their numbered V-notches, lift the pantyhose pocket, slide the egg out of the carton cup: about 40 seconds. The egg's position is fixed by the egg-carton cup hot-glued to the centre of the pantyhose pocket; the cup has a marker X and an arrow, the cradle box has a matching arrow on its front wall, and each notch is numbered 1-8 so the bands always go back on the same notches. Reload: egg into the cup (pointy end toward the arrow), pocket back, bands 1-4 re-hooked, lid, plate, flaps, bands: about 60 seconds. Total out-and-back under 2 minutes, egg out alone under 1 minute.",
+ "reusability": "Survives all four drops without re-tuning: outer box, collar, cradle box with lining, pantyhose pocket with marked cup, spreader plates, ballast, the two closure bands. Sacrificial and swappable: the bottom cup cartridge (9 cups glued under a 24x24 plate) is lifted out as one unit and replaced with a pre-built spare (2 spares carried, swap takes about 3 minutes because the cradle must be lifted out first); the top cup layer is likewise a plate with 9 cups, 1 spare; both egg-carton layers (2 spare cut sheets); newspaper wads (6 spare sheets); 8 spare suspension bands; 1 spare collar ring. Rule: swap a cup cartridge whenever any cup is crushed more than 1.5 cm or torn; swap a carton layer when any cell is flattened; replace a band if it is nicked. Each swap is a lift-out/drop-in of a pre-cut part, no glue needed on drop day (parts are a friction fit; a strip of tape holds the plates if wanted).",
+ "physics": {
+  "design_height_m": 25,
+  "no_drag_impact_speed_ms": 22.1,
+  "mass_kg": 0.69,
+  "drag_area_m2": 0.0784,
+  "cd": 1.15,
+  "terminal_velocity_ms": 11.2,
+  "expected_impact_speed_ms": 11.1,
+  "stopping_distance_m": 0.083,
+  "peak_decel_g": 76,
+  "worst_case_orientation": "Tumbling side landing at about 12.5 m/s (side-on area 0.070 m2, Cd 1.05 gives v_t 12.4 m/s): only 7.0 cm of crush + travel on the side path",
+  "worst_case_peak_decel_g": 114,
+  "egg_tolerance_assumption_g": 120,
+  "margin_comment": "ASSUMPTION (not a citation): a raw egg held in a soft conformal pocket that spreads load over about a third of its shell survives about 120 g for a 5-10 ms pulse; 100 g is the comfortable design target. Base-first at 11.1 m/s: 76 g, margin 1.6x. Worst case side landing at 12.5 m/s: 114 g, margin only 1.05x, so a tumbling side or top landing from the top floor is the real risk and is why the collar and ballast matter. Cd 1.15 is a cube (1.05) plus the flat-plate collar at the rim (plate 1.1-1.3); A is the 28x28 collar footprint falling base-first. v_t = sqrt(2*0.69*9.81/(1.2*1.15*0.0784)) = 11.2 m/s; v_t^2/2g = 6.4 m so terminal is reached well before 25 m: v(25) = 11.2*sqrt(1-exp(-25/6.4)) = 11.1 m/s. Numbers use a = v^2/2d with uniform crush; real cup buckling gives short spikes, so expect peaks 10-20% above these."
+ },
+ "build_steps": [
+  "Cut the outer box down to 26 x 26 cm footprint and 28 cm tall; mark an UP arrow and a FRONT label on one face. Tape the bottom flaps shut inside and out.",
+  "Cut two 24 x 24 cm spreader plates, a 2-layer collar ring (28 x 28 outer, 26 x 26 inner), and the cradle box panels (14 x 14 x 10 cm interior, plus a 14.8 x 14.8 lid). Pre-cut the same again as spares.",
+  "Bottom cartridge: cut 9 paper cups to 5 cm tall, hot-glue them mouth-down in a 3 x 3 grid under one plate (rims glued, 1 cm apart). Build 2 spare cartridges. Top layer: 9 cups cut to 4.3 cm glued under the second plate, plus 1 spare.",
+  "Cut egg cartons into flat 24 x 24 cm cell sheets: one 3 cm tall sheet for the bottom, one 2.5 cm sheet for the top (glue it to the cradle lid), plus 3 cm strips for the four side gaps; keep single cells for the cradle lining and 2 spare sheets.",
+  "Glue and tape the cradle box together; line all five inner faces and the lid underside with 1 cm pulp egg-carton cells so the clear space is about 12 x 12 x 8 cm. Cut a V-notch 1 cm deep at each of the 8 corners and number them 1-8.",
+  "Cradle pocket: cut a 15 cm length of pantyhose leg; hot-glue a single egg-carton cup (dots of glue on the outside of the nylon only) at its centre; write an X and an arrow on the cup. Tie a rubber band to each end of the pocket and loop two more bands through the nylon on each side so there are 8 band tails, one per notch.",
+  "Hook the 8 bands onto notches 1-8 so the pocket floats centred with about 1.75 cm clearance above and below and 3 cm on each side; test with a boiled egg: it must not touch the lining when the cradle is shaken.",
+  "Fill the outer box: rice bag flat on the floor, bottom cup cartridge (cups down), 3 cm carton sheet, then the cradle box centred with the arrow toward FRONT. Pack the four side gaps with carton strips against the box wall and crumpled newspaper against the cradle.",
+  "On top: cradle lid with its carton layer, the top cup plate (cups up, so they crush against the flaps), tape loop handles on both plates. Close the flaps; do not glue them.",
+  "Hot-glue and tape the collar flat around the top rim on both faces. Stretch two rubber bands vertically around the box over the flaps.",
+  "Weigh the whole thing with the egg (target 690 g, limit 940 g) and measure L, W, H with a ruler including the collar: 28 x 28 x 28 cm.",
+  "Pack the spares bag: 2 bottom cartridges, 1 top cup plate, 2 carton sheets, 6 newspaper sheets, 8 bands, 1 collar, tape, marker, a towel, and the extra eggs in their carton."
+ ],
+ "drop_procedure": [
+  "Before every drop: open, confirm the egg sits in the X cup with the pointy end on the arrow, bands on notches 1-8, no slack; close, re-band, check the collar is flat and the UP arrow is up.",
+  "Hold the device by the collar edges with both hands, base down, arms extended over the rail, keep it level and still (no spin, no throw).",
+  "Release both hands at once; let gravity do the work. Someone films from the ground to record orientation at impact.",
+  "Wait for the device to stop, then walk to it; do not catch or move it until you have noted which face it landed on and how deep the crush is.",
+  "Open within 60 seconds, lift the egg out, inspect under light by rolling it on a towel; a hairline crack counts as a fail.",
+  "Record floor, landing face, crush depth of the cups (ruler), egg result, and any torn parts in a notebook.",
+  "Reset per the swap rules (cartridge if cups crushed more than 1.5 cm or torn, carton sheet if flattened, newspaper if compacted, collar if torn, band if nicked), put the egg (or a fresh one) back into the X cup, re-hook 1-8, close.",
+  "Repeat from the next height only if the previous drop passed; if it failed, fix the cause before going higher."
+ ],
+ "failure_modes": [
+  {
+   "mode": "Suspension bottoms out: cup and egg hit the cradle wall at full force",
+   "mitigation": "Cradle walls are lined with 1 cm pulp cells so bottoming is onto soft material; 8 bands share the load; band tension checked for 1.75 cm clearance before every drop; spare bands in the bag."
+  },
+  {
+   "mode": "Hard part reaches the egg (glue blob, staple, cardboard edge)",
+   "mitigation": "No staples anywhere; hot glue is applied only to the outside of the nylon; cradle interior is 100 percent egg-carton pulp; the egg is enclosed in the pocket so it cannot roll out of the cup."
+  },
+  {
+   "mode": "Tumbling or clipping the wall, landing on side, top, edge or corner",
+   "mitigation": "Every face has 7 to 9 cm of independent crush path; worst rated case is 114 g versus 120 g assumption; collar plus ballast bias base-first; release level and still, away from the wall."
+  },
+  {
+   "mode": "Collar tears off or flaps burst open in flight or on impact",
+   "mitigation": "Collar is two layers glued and taped on both faces and is a swappable spare; flaps are held by two bands plus the top cup plate; even a lost collar only costs about 1 m/s of impact speed."
+  },
+  {
+   "mode": "Crush layers too stiff (box walls carry the load straight to the cradle)",
+   "mitigation": "Cups and carton cells sit inside the box, not glued to the walls, and the side packing is loose newspaper; the box walls are allowed to buckle. Verified on the 1st floor drop by measuring cup crush of at least 1 cm."
+  },
+  {
+   "mode": "Crushed parts reused, so a later drop has no crush left",
+   "mitigation": "Swap rules with a ruler: any cup crushed more than 1.5 cm or torn means a cartridge swap; 2 pre-built bottom cartridges and 1 top plate carried."
+  },
+  {
+   "mode": "Egg put back in a different spot after inspection",
+   "mitigation": "Positive location: egg-carton cup glued to the pocket centre, X and arrow marks, numbered notches, and the cradle arrow matched to the box FRONT label; checklist before every drop."
+  },
+  {
+   "mode": "Wet or humid cardboard losing stiffness, or rain",
+   "mitigation": "Device stays in a plastic bag until the drop; cardboard spares in the bag too; damp cups are swapped."
+  },
+  {
+   "mode": "Mass or size creep over the limits",
+   "mitigation": "Weigh and measure with the egg before leaving: 690 g against 940 g, 28 cm against 30 cm; no part is allowed outside the collar footprint."
+  }
+ ],
+ "test_plan": [
+  "Bench test (0 m): shake, tilt and invert the loaded device for 10 s with a boiled egg; open and confirm the egg is still in the X cup aligned to the arrow and no band slipped a notch. Pass = no movement.",
+  "Floor 1 (about 3.5 m, impact about 7.3 m/s): base-first drop with a raw egg. Pass = egg intact, bottom cups crushed 0.5-2 cm (proves the crumple engages), cradle undisturbed. Then one deliberate side-first drop from floor 1 (about 47 g on the side path) to validate the worst-case face while the speed is low. Pass = intact.",
+  "Floor 3 (about 10.5 m, impact about 10 m/s, already 90 percent of the top-floor speed): base-first with the bottom cartridge swapped beforehand. Pass = egg intact, orientation on video base-down or within 30 degrees, no part detached. Swap the cartridge afterwards.",
+  "Floor 5 (about 17.5 m, impact about 10.8 m/s, essentially terminal): full dress rehearsal with fresh cartridge and carton sheets. Pass = egg intact, crush depth recorded, collar intact. This is the go / no-go for the top: if it fails, add a third carton sheet in place of 1 cm of newspaper on the failed face before going higher.",
+  "Top floor (25 m, 11.1 m/s): fresh bottom cartridge, fresh egg, same checklist. Pass = egg out with no crack within 60 s of landing.",
+  "After each drop log: floor, landing face, cup crush (cm), egg result, parts swapped, reset time. Four drops total use at most 3 cartridges and 2 carton sheets, all from the spares bag."
+ ],
+ "sketch_notes": "TOP VIEW: draw a 28 x 28 cm square (collar outline), inside it a 26 x 26 square (box), inside that a dashed 3 x 3 grid of 7 cm circles (cups below), and a 14.8 cm square centred (cradle) with an egg oval lying flat in the middle marked with an X and an arrow pointing to the FRONT face; label the 5.2 cm side gaps \"carton strips + newspaper\". FRONT VIEW: a 26 wide x 28 tall rectangle with the 2 cm collar sticking out at the top on both sides (total 28); stack from bottom with dimension ticks: rice bag 0.8, cups 5, plate 0.4, carton cells 3, cradle box 10.8 (draw the egg in the centre with 8 rubber-band lines to the 8 corners and a 1 cm hatched lining), carton 2.5, plate 0.4, cups 4.3, flaps; mark centre of mass at about 11 cm and centre of pressure at about 20 cm with a note \"CP above CM = base-first\". SIDE VIEW: identical to the front view (four-fold symmetry); add the UP arrow, the two closure rubber bands, and the overall dimension lines L 28, W 28, H 28 with \"Volume = 28 x 28 x 28 = 21,952 cm3, mass 690 g\".",
+ "confidence": 0.55
+}

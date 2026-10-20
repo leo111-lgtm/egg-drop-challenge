@@ -1,0 +1,204 @@
+{
+  "__force": [
+    "author",
+    "collaborators",
+    "date",
+    "final_checklist",
+    "geometry",
+    "measure_how",
+    "page_title",
+    "project",
+    "sim",
+    "site"
+  ],
+  "page_title": "Egg Lander Build Sheet",
+  "project": "Egg drop challenge · 6 to 7 floors",
+  "author": "L. Deromedi · Karina",
+  "date": "2026-10-19",
+  "site": {
+    "floors": 7,
+    "keepout_m": 4
+  },
+  "measure_how": [
+    "Put the finished device on a flat table with the egg loaded and every spare part removed.",
+    "Measure the longest horizontal extent with a tape, corner to corner along one side, including anything that sticks out (bumpers, tape tabs). That is L.",
+    "Turn the tape 90° and measure the other horizontal extent the same way. That is W.",
+    "Stand a ruler on the table and read the highest point. That is H.",
+    "Write the three numbers on the canopy in marker, then multiply them: Volume = L × W × H in cm³.",
+    "Check each number against 30 cm. Press any bulge flat or trim it before the grader measures."
+  ],
+  "final_checklist": [
+    "All three sides measured and written on the device; each under 30 cm.",
+    "Device plus egg weighed on a kitchen scale; under 940 g.",
+    "Egg seated in its marked cradle, hatch closed and secured.",
+    "Every rubber band checked: no nicks, equal tension on all corners.",
+    "Sacrificial crumple parts fresh (or inspected and passed after the last drop).",
+    "Spares bag, tape and scissors in the dropper's pocket.",
+    "Landing target marked; keep-out radius clear; spotters in place.",
+    "Wind checked at the rail: postpone if the device swings in your hands.",
+    "Phone or camera rolling; timer ready.",
+    "Calls agreed: 'zone clear' → 'dropping in 3, 2, 1' → release → 'device down' → inspect."
+  ],
+  "geometry": {
+    "canopy": {
+      "w": 27,
+      "d": 27,
+      "t": 0.4,
+      "vent_r": 1.5
+    },
+    "sleeve": {
+      "w": 16,
+      "d": 16,
+      "h": 12,
+      "t": 0.4,
+      "door": {
+        "w": 6,
+        "h": 9,
+        "bottom_offset": 1.0
+      }
+    },
+    "cups_bottom": {
+      "h": 9.3,
+      "r_mouth": 3.65,
+      "r_base": 2.6,
+      "inset": 4.0,
+      "crush_to": 0.25
+    },
+    "cups_top": {
+      "h": 5.5,
+      "r_mouth": 2.85,
+      "r_base": 2.0,
+      "inset": 3.2
+    },
+    "cups_side": {
+      "h": 5.5,
+      "r_mouth": 2.85,
+      "r_base": 2.0,
+      "dx": 5.2,
+      "rows": [
+        3.0,
+        9.0
+      ]
+    },
+    "pads": {
+      "t": 2.0,
+      "floor": 12,
+      "wall_w": 12,
+      "wall_h": 8
+    },
+    "socket": {
+      "r": 3.0,
+      "h": 1.2,
+      "t": 0.3
+    },
+    "pod": {
+      "w": 5.2,
+      "h": 7.0,
+      "cell_h": 3.6
+    },
+    "sponge_t": 1.0,
+    "egg": {
+      "len": 6,
+      "dia": 4.5
+    },
+    "bands": {
+      "r": 0.15,
+      "anchor_from_top": 1.0
+    },
+    "anchors": {
+      "toggle_len": 3
+    },
+    "explode_cm": 9,
+    "labels": [
+      {
+        "id": "canopy",
+        "text": "Drag canopy 27 × 27 cm · Ø 3 cm vent",
+        "at": [
+          9,
+          0.4,
+          9
+        ]
+      },
+      {
+        "id": "cups_top",
+        "text": "Bumper cups ×4 for an upside-down landing",
+        "at": [
+          10.3,
+          5.5,
+          -10.3
+        ]
+      },
+      {
+        "id": "wall_front",
+        "text": "Sleeve 16 × 16 × 12 cm · door 6 × 9 cm",
+        "at": [
+          -5.5,
+          11.5,
+          0
+        ]
+      },
+      {
+        "id": "cups_side_r",
+        "text": "Side cups ×16, four per wall",
+        "at": [
+          13.5,
+          18.3,
+          5.2
+        ]
+      },
+      {
+        "id": "cups_bottom",
+        "text": "9 oz crumple cups ×4 · 7 cm of crush",
+        "at": [
+          -4,
+          0.3,
+          4
+        ]
+      },
+      {
+        "id": "pod",
+        "text": "Egg pod: carton cell + traced sponge pocket",
+        "at": [
+          2.6,
+          1.5,
+          0
+        ]
+      },
+      {
+        "id": "socket",
+        "text": "Socket ring: pod drops back into the same spot",
+        "at": [
+          3,
+          0.4,
+          0
+        ]
+      },
+      {
+        "id": "pad_wall_l",
+        "text": "2 cm newspaper pads on all six inner faces",
+        "at": [
+          -1,
+          3,
+          0
+        ]
+      },
+      {
+        "id": "bands",
+        "text": "Two bands hold the pod down",
+        "at": [
+          0,
+          19.3,
+          4
+        ]
+      }
+    ]
+  },
+  "sim": {
+    "static_sag_cm": 0.5,
+    "pulse_shape": "half-sine"
+  },
+  "collaborators": [
+    "Léo Deromedi",
+    "Karina"
+  ]
+}

@@ -1,0 +1,1264 @@
+{
+  "name": "Lantern Lander Mk2",
+  "tagline": "A flat cardboard canopy slows the fall to a third of free-fall speed; paper cups on all six faces crush on landing; the egg rides in a sponge pocket at the centre.",
+  "summary": "The device is a 27 × 27 × 27.2 cm lantern. On top, a 27 cm square of corrugated cardboard with a vent hole acts as a drag plate: the device weighs only about 300 g, so it settles at about 7.8 m/s instead of the 22 m/s it would reach with no air, and the low-hanging mass keeps it falling canopy-up like a shuttlecock. Under the canopy hangs a 16 × 16 × 12 cm cardboard sleeve. Four 9 oz paper cups under the floor are the main crumple zone; four 3 oz cups on the canopy cover an upside-down landing; sixteen 3 oz cups on the four walls cover side, edge and corner landings. Every inner face of the sleeve is lined with a 2 cm folded-newspaper pad. At the centre, the egg lies in a pocket traced into a kitchen sponge inside an egg-carton pod, which sits in a cardboard socket glued to the floor pad and is held by two rubber bands, so it goes back to exactly the same spot after every test drop. A door in the front wall lets the pod out in under a minute. Crushed cups and pads are swapped from a bag of pre-cut spares.",
+  "why_this_design": [
+    "Drag first: a 27 cm canopy on a 300 g device gives a terminal velocity near 7.8 m/s, reached before the 3rd floor, so the 25 m drop lands no harder than a 10 m drop.",
+    "Stable on the way down: the canopy is the centre of pressure and the sleeve, cups and egg hang 10 cm below it, so any tilt swings back canopy-up. The vent stops the plate rocking.",
+    "Crush on every face: cups under the floor, on the canopy and on all four walls mean a tumble or a wall clip still lands on 4 to 7 cm of paper cup, then a 2 cm pad, then the sponge.",
+    "No free flight inside: the egg pod sits in a socket on the floor pad instead of hanging on slack bands, so it decelerates with the frame and never hits a wall at full speed. The panel's physics judge found this flaw in every hammock design.",
+    "Cheap and repeatable: one cardboard box, two bags of paper cups, a sponge, an egg carton and rubber bands, about $5. The pocket, the socket and marker marks put the egg back in the same place; cups and pads swap from spares between drops."
+  ],
+  "dims_cm": {
+    "L": 27,
+    "W": 27,
+    "H": 27.2
+  },
+  "volume_cm3": 19828.8,
+  "limits": {
+    "max_side_cm": 30,
+    "max_mass_g": 940
+  },
+  "mass_budget_g": [
+    {
+      "item": "Raw large egg (payload)",
+      "grams": 58,
+      "note": "55 to 60 g typical"
+    },
+    {
+      "item": "Canopy: 27 × 27 cm single-wall corrugated, 3 cm vent, taped edges",
+      "grams": 38,
+      "note": "about 45 g/m² of board plus tape"
+    },
+    {
+      "item": "Sleeve: four 16 × 12 cm walls and a 16 × 16 cm floor, door cut out",
+      "grams": 44,
+      "note": "single-wall corrugated"
+    },
+    {
+      "item": "Pads: six folded-newspaper pads 2 cm thick on every inner face",
+      "grams": 30,
+      "note": "floor and ceiling 12 × 12 cm, walls 12 × 8 cm"
+    },
+    {
+      "item": "Egg pod: carton cell with lid, two 1 cm sponge discs, cardboard socket ring",
+      "grams": 18,
+      "note": "pulp cell 8 g, sponge 8 g, ring 2 g"
+    },
+    {
+      "item": "Bottom crumple cups: 4 × 9 oz paper cups",
+      "grams": 24,
+      "note": "6 g each; sacrificial"
+    },
+    {
+      "item": "Top bumper cups: 4 × 3 oz paper cups",
+      "grams": 10,
+      "note": "2.5 g each; sacrificial"
+    },
+    {
+      "item": "Side cups: 16 × 3 oz paper cups, four per wall",
+      "grams": 40,
+      "note": "2.5 g each; sacrificial"
+    },
+    {
+      "item": "Rubber bands (2 over the pod, 1 door latch) and 4 straw toggles",
+      "grams": 5,
+      "note": "#33 bands about 1 g each"
+    },
+    {
+      "item": "Hot glue and packing tape",
+      "grams": 36,
+      "note": "about 3 m of tape, 2 glue sticks"
+    },
+    {
+      "item": "Marker lines, numbers, tape tabs",
+      "grams": 2,
+      "note": ""
+    }
+  ],
+  "total_mass_g": 305,
+  "materials": [
+    {
+      "item": "Corrugated cardboard shipping box, single-wall",
+      "qty": "1 box, at least 40 × 30 × 30 cm (gives about 0.3 m² of flat board)",
+      "spec": "3 to 4 mm single-wall, dry and uncreased where the canopy and walls are cut",
+      "source": "home (any delivery box) or free from a supermarket",
+      "est_mass_g": 120,
+      "est_cost_usd": 0,
+      "purpose": "canopy, sleeve walls, floor, socket ring, spare wall panel"
+    },
+    {
+      "item": "Paper cups, 9 oz (about 9.3 cm tall)",
+      "qty": "8 (4 on the device + 4 spares)",
+      "spec": "plain paper, not foam, not waxed thick",
+      "source": "dollar store 20-pack",
+      "est_mass_g": 48,
+      "est_cost_usd": 1.25,
+      "purpose": "bottom crumple cups"
+    },
+    {
+      "item": "Paper cups, 3 oz bathroom size (about 5.5 cm tall)",
+      "qty": "40 (20 on the device + 20 spares)",
+      "spec": "plain paper",
+      "source": "dollar store 50-pack",
+      "est_mass_g": 100,
+      "est_cost_usd": 1.25,
+      "purpose": "top bumper cups and side cups"
+    },
+    {
+      "item": "Pulp egg carton, 12-count",
+      "qty": "1",
+      "spec": "paper pulp, not foam or plastic",
+      "source": "home or supermarket (comes with the eggs)",
+      "est_mass_g": 10,
+      "est_cost_usd": 0,
+      "purpose": "the egg pod: one cell plus its lid"
+    },
+    {
+      "item": "Kitchen cellulose sponge",
+      "qty": "1 (cut into two 1 cm discs)",
+      "spec": "plain sponge, no scouring side, about 11 × 7 × 2 cm",
+      "source": "home or dollar store",
+      "est_mass_g": 10,
+      "est_cost_usd": 1.25,
+      "purpose": "traced egg pocket below, cushion disc above"
+    },
+    {
+      "item": "Newspaper",
+      "qty": "about 12 sheets",
+      "spec": "any",
+      "source": "home, free",
+      "est_mass_g": 60,
+      "est_cost_usd": 0,
+      "purpose": "six folded 2 cm pads plus two spares"
+    },
+    {
+      "item": "Rubber bands, #33 (about 9 cm × 3 mm)",
+      "qty": "10 (3 on the device + 7 spares)",
+      "spec": "fresh, stretch to 2× without whitening",
+      "source": "home or dollar store",
+      "est_mass_g": 10,
+      "est_cost_usd": 0,
+      "purpose": "two bands hold the pod lid down into the socket, one latches the door"
+    },
+    {
+      "item": "Drinking straws",
+      "qty": "1, cut into four 3 cm toggles",
+      "spec": "plastic or paper",
+      "source": "home, free",
+      "est_mass_g": 1,
+      "est_cost_usd": 0,
+      "purpose": "toggles that hold the band loops outside the walls"
+    },
+    {
+      "item": "Packing tape",
+      "qty": "about 3 m",
+      "spec": "48 mm clear tape",
+      "source": "home",
+      "est_mass_g": 20,
+      "est_cost_usd": 0,
+      "purpose": "canopy edges, cup collars, door hinge, joints"
+    },
+    {
+      "item": "Hot glue sticks (with a glue gun)",
+      "qty": "2",
+      "spec": "standard 11 mm",
+      "source": "home",
+      "est_mass_g": 16,
+      "est_cost_usd": 0,
+      "purpose": "sleeve joints, cups to floor, canopy and walls, socket ring"
+    },
+    {
+      "item": "Permanent marker, pencil, ruler, scissors, box cutter",
+      "qty": "1 each",
+      "spec": "",
+      "source": "home",
+      "est_mass_g": 0,
+      "est_cost_usd": 0,
+      "purpose": "marking the pocket, numbers and registration lines; cutting"
+    },
+    {
+      "item": "Raw large eggs",
+      "qty": "5 (1 for the final drop + 4 for the test ladder)",
+      "spec": "large, no hairline cracks",
+      "source": "supermarket",
+      "est_mass_g": 58,
+      "est_cost_usd": 1.5,
+      "purpose": "payload and test eggs (half a dozen)"
+    },
+    {
+      "item": "Zip-top bag",
+      "qty": "1 gallon size",
+      "spec": "any",
+      "source": "home",
+      "est_mass_g": 5,
+      "est_cost_usd": 0,
+      "purpose": "spares bag carried on drop day"
+    }
+  ],
+  "total_cost_usd": 5.25,
+  "tools": [
+    "ruler",
+    "pencil",
+    "marker",
+    "scissors",
+    "box cutter",
+    "hot-glue gun",
+    "kitchen scale (optional)"
+  ],
+  "components": [
+    {
+      "id": "canopy",
+      "name": "Drag canopy",
+      "shape": "plate",
+      "size_cm": "27 × 27 × 0.4, vent Ø 3 at the centre",
+      "position_cm": {
+        "x": 0,
+        "y": 21.5,
+        "z": 0
+      },
+      "material": "single-wall corrugated, edges taped",
+      "color_hint": "tan",
+      "role": "drag plate and centre of pressure; the lid of the sleeve"
+    },
+    {
+      "id": "cups_top",
+      "name": "Top bumper cups ×4",
+      "shape": "cone",
+      "size_cm": "3 oz cup Ø 5.7/4 × 5.5, base down on each canopy corner",
+      "position_cm": {
+        "x": 10.3,
+        "y": 24.5,
+        "z": 10.3
+      },
+      "material": "paper cup",
+      "color_hint": "white",
+      "role": "crumple zone for an upside-down landing"
+    },
+    {
+      "id": "wall_front",
+      "name": "Sleeve wall, front, with door",
+      "shape": "plate",
+      "size_cm": "16 × 12 × 0.4, door 6 × 9",
+      "position_cm": {
+        "x": 0,
+        "y": 15.3,
+        "z": 8
+      },
+      "material": "corrugated",
+      "color_hint": "tan",
+      "role": "frame wall; the door lets the pod out"
+    },
+    {
+      "id": "wall_back",
+      "name": "Sleeve wall, back",
+      "shape": "plate",
+      "size_cm": "16 × 12 × 0.4",
+      "position_cm": {
+        "x": 0,
+        "y": 15.3,
+        "z": -8
+      },
+      "material": "corrugated",
+      "color_hint": "tan",
+      "role": "frame wall"
+    },
+    {
+      "id": "wall_left",
+      "name": "Sleeve wall, left",
+      "shape": "plate",
+      "size_cm": "16 × 12 × 0.4",
+      "position_cm": {
+        "x": -8,
+        "y": 15.3,
+        "z": 0
+      },
+      "material": "corrugated",
+      "color_hint": "tan",
+      "role": "frame wall"
+    },
+    {
+      "id": "wall_right",
+      "name": "Sleeve wall, right",
+      "shape": "plate",
+      "size_cm": "16 × 12 × 0.4",
+      "position_cm": {
+        "x": 8,
+        "y": 15.3,
+        "z": 0
+      },
+      "material": "corrugated",
+      "color_hint": "tan",
+      "role": "frame wall"
+    },
+    {
+      "id": "floor",
+      "name": "Sleeve floor",
+      "shape": "plate",
+      "size_cm": "15.2 × 15.2 × 0.4",
+      "position_cm": {
+        "x": 0,
+        "y": 9.5,
+        "z": 0
+      },
+      "material": "corrugated",
+      "color_hint": "tan",
+      "role": "carries the bottom cups and the floor pad"
+    },
+    {
+      "id": "pads_wall",
+      "name": "Wall pads ×4",
+      "shape": "box",
+      "size_cm": "12 × 8 × 2 each, on every inner wall",
+      "position_cm": {
+        "x": 0,
+        "y": 15.3,
+        "z": 6.6
+      },
+      "material": "folded newspaper",
+      "color_hint": "grey",
+      "role": "soft stop for the pod on a side landing"
+    },
+    {
+      "id": "pad_floor",
+      "name": "Floor pad",
+      "shape": "box",
+      "size_cm": "12 × 12 × 2",
+      "position_cm": {
+        "x": 0,
+        "y": 10.7,
+        "z": 0
+      },
+      "material": "folded newspaper",
+      "color_hint": "grey",
+      "role": "soft stop under the pod"
+    },
+    {
+      "id": "pad_top",
+      "name": "Ceiling pad",
+      "shape": "box",
+      "size_cm": "12 × 12 × 2 under the canopy",
+      "position_cm": {
+        "x": 0,
+        "y": 20.3,
+        "z": 0
+      },
+      "material": "folded newspaper",
+      "color_hint": "grey",
+      "role": "soft stop above the pod for an upside-down landing"
+    },
+    {
+      "id": "socket",
+      "name": "Pod socket",
+      "shape": "ring",
+      "size_cm": "Ø 6 × 1.2 cardboard ring glued to the floor pad",
+      "position_cm": {
+        "x": 0,
+        "y": 12.3,
+        "z": 0
+      },
+      "material": "cardboard strip",
+      "color_hint": "tan",
+      "role": "puts the pod back in exactly the same spot"
+    },
+    {
+      "id": "pod",
+      "name": "Egg pod",
+      "shape": "cylinder",
+      "size_cm": "Ø 5.2 × 7: carton cell + lid, two 1 cm sponge discs, pocket traced from the egg",
+      "position_cm": {
+        "x": 0,
+        "y": 15.2,
+        "z": 0
+      },
+      "material": "pulp egg carton, cellulose sponge",
+      "color_hint": "grey",
+      "role": "holds the egg wide end down, spreads the load over the shell"
+    },
+    {
+      "id": "egg",
+      "name": "Egg",
+      "shape": "ellipsoid",
+      "size_cm": "6 × 4.5",
+      "position_cm": {
+        "x": 0,
+        "y": 15.2,
+        "z": 0
+      },
+      "material": "raw large chicken egg",
+      "color_hint": "cream",
+      "role": "payload"
+    },
+    {
+      "id": "bands",
+      "name": "Retaining bands ×2",
+      "shape": "band",
+      "size_cm": "#33, crossed over the pod lid, wall to wall",
+      "position_cm": {
+        "x": 0,
+        "y": 19,
+        "z": 0
+      },
+      "material": "rubber",
+      "color_hint": "red",
+      "role": "hold the pod down into the socket"
+    },
+    {
+      "id": "toggles",
+      "name": "Straw toggles ×4",
+      "shape": "rod",
+      "size_cm": "3 cm straw pieces outside each wall",
+      "position_cm": {
+        "x": 0,
+        "y": 19.5,
+        "z": 8.3
+      },
+      "material": "drinking straw",
+      "color_hint": "white",
+      "role": "anchor the band loops through the wall holes"
+    },
+    {
+      "id": "cups_side",
+      "name": "Side cups ×16",
+      "shape": "cone",
+      "size_cm": "3 oz cup Ø 5.7/4 × 5.5, four per wall, mouth out",
+      "position_cm": {
+        "x": 5.2,
+        "y": 12.3,
+        "z": 10.8
+      },
+      "material": "paper cup",
+      "color_hint": "white",
+      "role": "crumple zone for side, edge and corner landings"
+    },
+    {
+      "id": "cups_bottom",
+      "name": "Bottom crumple cups ×4",
+      "shape": "cone",
+      "size_cm": "9 oz cup Ø 7.3/5.2 × 9.3, mouth down under each floor corner",
+      "position_cm": {
+        "x": 4,
+        "y": 4.65,
+        "z": 4
+      },
+      "material": "paper cup",
+      "color_hint": "white",
+      "role": "main crumple zone: 7 cm of crush"
+    }
+  ],
+  "protection_by_face": [
+    {
+      "face": "Bottom (upright, the designed landing)",
+      "protection": "4 × 9 oz cups crush 7 cm, then the floor pad and the sponge disc under the egg",
+      "stopping_distance_cm": 8.5,
+      "peak_g": 57,
+      "verdict": "survives (57 g of 90 g assumed)",
+      "speed": "designed",
+      "impact_speed_ms": 7.7,
+      "panel_note": ""
+    },
+    {
+      "face": "Top (upside-down)",
+      "protection": "4 × 3 oz bumper cups crush 4 cm, the canopy flexes 1 cm, then the ceiling pad and the sponge disc over the egg",
+      "stopping_distance_cm": 6.5,
+      "peak_g": 74,
+      "verdict": "marginal (74 g of 90 g assumed)",
+      "speed": "designed",
+      "impact_speed_ms": 7.7,
+      "panel_note": ""
+    },
+    {
+      "face": "Side (any of the four walls)",
+      "protection": "4 side cups crush 4 cm, the canopy edge and wall fold about 3 cm, then the wall pad and the sponge around the egg",
+      "stopping_distance_cm": 8.5,
+      "peak_g": 76,
+      "verdict": "marginal (76 g of 90 g assumed)",
+      "speed": "tumbling",
+      "impact_speed_ms": 9,
+      "panel_note": ""
+    },
+    {
+      "face": "Edge (two walls meet the ground)",
+      "protection": "two side cups from each wall crush at an angle, canopy edge folds, then the two wall pads",
+      "stopping_distance_cm": 8.5,
+      "peak_g": 76,
+      "verdict": "marginal (76 g of 90 g assumed)",
+      "speed": "tumbling",
+      "impact_speed_ms": 9,
+      "panel_note": ""
+    },
+    {
+      "face": "Corner (bottom corner first)",
+      "protection": "one 9 oz cup crushes diagonally, two side cups fold, canopy corner folds, then the floor and wall pads",
+      "stopping_distance_cm": 9,
+      "peak_g": 72,
+      "verdict": "marginal (72 g of 90 g assumed)",
+      "speed": "tumbling",
+      "impact_speed_ms": 9,
+      "panel_note": ""
+    }
+  ],
+  "egg_access": {
+    "open": "Pull the band off the door tab and swing the door down on its tape hinge. Hook a finger under the two retaining bands and slip them off their toggles on the far wall. Slide the pod out through the door by its tab.",
+    "seat": "Open the pod lid. Lift the egg out by the narrow end, check it and dry it. Put the egg back wide end down into the traced pocket with the pencil N mark on the shell against the N on the sponge. Close the lid, push the pod back through the door until it drops into the socket ring with its UP arrow in line with the marker line on the floor pad.",
+    "close": "Hook the two retaining bands back onto their toggles (numbered 1 and 2), swing the door up and loop the latch band over its tab. Look through the vent: the lid should be flat and centred.",
+    "seconds": 50,
+    "same_place_feature": "Three things fix the position: the egg can only sit one way in the pocket cut to its outline, the pod can only drop into the socket ring, and the UP arrow on the pod meets the line on the floor pad."
+  },
+  "reset_between_drops": [
+    "Carry the device to the inspection table. Open the door and take the egg out before touching anything else; note whether it is intact.",
+    "Look at the four bottom cups: any cup shorter than 5 cm or split is swapped (peel the tape collar, twist the cup off its glue dab, hot-glue or tape a fresh cup on, re-tape the collar). Expect to swap all four after the 5th-floor and top drops.",
+    "Check the side and top cups: swap any that are dented more than 1 cm.",
+    "Press the floor pad and wall pads: swap any pad that stays below 1.5 cm thick.",
+    "Check the two retaining bands and the door band for nicks; replace from the bag if in doubt.",
+    "Look along the canopy: if an edge or corner is folded, splint it with a strip of tape on both sides.",
+    "Re-seat the egg (or a fresh test egg) in the pocket, pod into the socket, bands on, door latched.",
+    "Re-measure L, W, H and write the numbers on the drop log; climb to the next floor."
+  ],
+  "test_ladder": [
+    {
+      "drop": 1,
+      "height_floors": "1st floor window or landing",
+      "height_m": 3.5,
+      "purpose": "Proves the egg access, the socket and the cups work before anything is at risk: does it land canopy-up, do the bottom cups crush evenly?",
+      "pass_criteria": "Egg intact, device lands within 1 m of the target, cups crush less than half, nothing came loose.",
+      "expected_impact_speed_ms": 6.4,
+      "fall_time_s": 0.9
+    },
+    {
+      "drop": 2,
+      "height_floors": "3rd floor",
+      "height_m": 10.5,
+      "purpose": "First drop at terminal velocity: from here up the impact speed no longer rises, so this is the real landing test.",
+      "pass_criteria": "Egg intact after a full-speed landing; swap cups; note how far the pod moved in its socket (it should not).",
+      "expected_impact_speed_ms": 7.6,
+      "fall_time_s": 1.9
+    },
+    {
+      "drop": 3,
+      "height_floors": "5th floor",
+      "height_m": 17.5,
+      "purpose": "Repeat at full speed with fresh cups to confirm the swap procedure gives the same result.",
+      "pass_criteria": "Egg intact; the reset took under 5 minutes; measurements still under 30 cm.",
+      "expected_impact_speed_ms": 7.7,
+      "fall_time_s": 2.8
+    },
+    {
+      "drop": 4,
+      "height_floors": "7th floor (the graded drop)",
+      "height_m": 25,
+      "purpose": "The real thing, with the final egg and fresh cups and pads.",
+      "pass_criteria": "Egg intact.",
+      "expected_impact_speed_ms": 7.7,
+      "fall_time_s": 3.8
+    }
+  ],
+  "spares": [
+    {
+      "item": "9 oz cups, pre-glued collar tape strips ready",
+      "qty_spare": "4",
+      "swap_minutes": 4,
+      "when": "a bottom cup is under 5 cm tall or split (expected after every full-speed drop)"
+    },
+    {
+      "item": "3 oz cups",
+      "qty_spare": "20",
+      "swap_minutes": 2,
+      "when": "a side or top cup is dented more than 1 cm"
+    },
+    {
+      "item": "Folded newspaper pads 2 cm",
+      "qty_spare": "2",
+      "swap_minutes": 2,
+      "when": "a pad stays compressed below 1.5 cm"
+    },
+    {
+      "item": "Rubber bands #33",
+      "qty_spare": "7",
+      "swap_minutes": 1,
+      "when": "a band is nicked or no longer snaps back"
+    },
+    {
+      "item": "Spare 16 × 12 cm wall panel and tape",
+      "qty_spare": "1",
+      "swap_minutes": 3,
+      "when": "a wall is creased after a side landing: tape the panel over it as a splint"
+    },
+    {
+      "item": "Test eggs",
+      "qty_spare": "4",
+      "swap_minutes": 1,
+      "when": "one egg per ladder drop; the final egg stays in its carton until drop 4"
+    }
+  ],
+  "build_steps": [
+    {
+      "n": 1,
+      "title": "Cut the canopy",
+      "detail": "Mark a 27 × 27 cm square on flat, uncreased cardboard and cut it with the box cutter against the ruler in two passes. Find the centre by drawing both diagonals and cut a 3 cm hole there. Fold a strip of packing tape over all four edges. On the underside draw a 16 × 16 cm square centred on the hole.",
+      "minutes": 15,
+      "tools": "ruler, pencil, box cutter, tape",
+      "tip": "Cut on a scrap board and keep the flutes running the same way on every panel.",
+      "component_ids": [
+        "canopy"
+      ]
+    },
+    {
+      "n": 2,
+      "title": "Cut and fold the sleeve",
+      "detail": "Cut one strip 64.8 × 12 cm (four 16 cm panels plus a 0.8 cm glue tab). Score the three fold lines lightly with the box cutter against the ruler, fold into a 16 × 16 cm square tube and hot-glue the tab inside. Cut a 15.2 × 15.2 cm floor and glue it flush into the bottom of the tube.",
+      "minutes": 20,
+      "tools": "ruler, box cutter, hot glue",
+      "tip": "Score only the top liner of the board so the fold stays sharp without cracking.",
+      "component_ids": [
+        "wall_front",
+        "wall_back",
+        "wall_left",
+        "wall_right",
+        "floor"
+      ]
+    },
+    {
+      "n": 3,
+      "title": "Cut the door",
+      "detail": "On one wall (this becomes the front), draw a 6 cm wide × 9 cm tall rectangle centred left-to-right with its bottom edge 1 cm above the floor. Cut the two sides and the bottom, leave the top as a hinge and run tape over the hinge. Glue a small cardboard tab to the outside bottom of the door and a matching tab on the wall below it for the latch band.",
+      "minutes": 8,
+      "tools": "ruler, box cutter, tape, hot glue",
+      "tip": "The pod is 5.2 cm wide; test that it passes through before you glue anything else.",
+      "component_ids": [
+        "wall_front"
+      ]
+    },
+    {
+      "n": 4,
+      "title": "Make the pads",
+      "detail": "Fold newspaper into two 12 × 12 cm pads and four 12 × 8 cm pads, each 2 cm thick (about 8 layers folded, then taped round the middle). Tape one square pad to the floor. Tape a rectangular pad to the inside of each wall, centred, 2 cm above the floor pad. Keep the second square pad for the canopy.",
+      "minutes": 12,
+      "tools": "tape",
+      "tip": "Fold the pads so the open edges face the wall: they crush more evenly.",
+      "component_ids": [
+        "pad_floor",
+        "pads_wall"
+      ]
+    },
+    {
+      "n": 5,
+      "title": "Make the pod and its socket",
+      "detail": "Cut one cell from the egg carton together with the lid section directly above it, keeping the hinge. Cut two 1 cm thick discs from the sponge to fit the cell. Stand the egg wide end down on one disc, trace round it with the marker and cut the pocket to half the disc thickness; write N at the narrow end. Glue that disc into the cell and the other disc inside the lid. Draw a big UP arrow on the outside of the lid. Cut a 1.2 × 20 cm cardboard strip, roll it into a ring the pod base just fits into, tape it, and hot-glue the ring to the centre of the floor pad. Draw a line across the floor pad that the UP arrow will meet.",
+      "minutes": 15,
+      "tools": "scissors, marker, hot glue",
+      "tip": "Write N on the egg shell too with a pencil so the egg goes back the same way every time.",
+      "component_ids": [
+        "pod",
+        "egg",
+        "socket"
+      ]
+    },
+    {
+      "n": 6,
+      "title": "Fit the retaining bands",
+      "detail": "Punch a hole with a pencil tip at the top centre of each wall, 1 cm below the top edge. Push a #33 band through the front hole from inside and slip a 3 cm straw toggle through the loop outside; stretch the band across the sleeve, over the socket, out through the back hole and onto a second toggle. Repeat left to right. Number the four toggles 1 to 4 so a swapped band always goes back to the same holes.",
+      "minutes": 8,
+      "tools": "pencil, scissors",
+      "tip": "The bands should press the pod lid down firmly but still let you slip them off with one finger.",
+      "component_ids": [
+        "bands",
+        "toggles"
+      ]
+    },
+    {
+      "n": 7,
+      "title": "Glue the canopy on",
+      "detail": "Tape the second square pad to the underside of the canopy inside the 16 cm square. Run hot glue along the top edges of the four walls, press the canopy on with the pad inside the sleeve, hold for a minute, then add a tape tab over the joint at each corner outside.",
+      "minutes": 8,
+      "tools": "hot glue, tape",
+      "tip": "Check through the vent that the pad sits flat before the glue sets.",
+      "component_ids": [
+        "pad_top",
+        "canopy"
+      ]
+    },
+    {
+      "n": 8,
+      "title": "Fit the bottom crumple cups",
+      "detail": "Hot-glue the base of a 9 oz cup under each corner of the floor, mouth down, with its centre 4 cm in from each edge, and wrap a collar of tape from cup to floor. The cup mouths are the only part that touches the ground.",
+      "minutes": 8,
+      "tools": "hot glue, tape",
+      "tip": "Press each cup on a kitchen scale first: it should start to fold between 2 and 3 kg. A cup that folds much easier gets a second cup nested inside.",
+      "component_ids": [
+        "cups_bottom"
+      ]
+    },
+    {
+      "n": 9,
+      "title": "Fit the top and side cups",
+      "detail": "Hot-glue four 3 oz cups base down on the four top corners of the canopy, 3.2 cm in from the edges, mouths up. Hot-glue four 3 oz cups on each wall with bases against the wall and mouths outward: two at 3 cm above the floor and two at 3 cm below the top, each 5.2 cm left and right of the wall centre, clear of the door. Tape collars round every cup base.",
+      "minutes": 20,
+      "tools": "hot glue, tape",
+      "tip": "Squeeze each 3 oz cup gently to put four shallow vertical creases in it so it buckles instead of splitting.",
+      "component_ids": [
+        "cups_top",
+        "cups_side"
+      ]
+    },
+    {
+      "n": 10,
+      "title": "Load and check the envelope",
+      "detail": "Seat a test egg, close the pod, drop the pod into the socket with the UP arrow on the line, hook the bands, latch the door. Measure L and W across the canopy (27 cm) and H from the cup mouths on the floor to the top of the bumper cups (27.2 cm). Weigh if you can: about 305 g with the egg. Write the three numbers on the canopy.",
+      "minutes": 5,
+      "tools": "ruler, kitchen scale",
+      "tip": "Nothing may stick out past the canopy edge: the side cups end exactly at it.",
+      "component_ids": []
+    },
+    {
+      "n": 11,
+      "title": "Pack the spares bag",
+      "detail": "Four 9 oz cups and twenty 3 oz cups (pre-creased), two folded pads, seven bands, the spare wall panel, tape, scissors, marker, the drop log sheet and the test eggs in their carton.",
+      "minutes": 5,
+      "tools": "",
+      "tip": "Pre-cut the tape collars and stick them to a plastic card so a cup swap takes two minutes.",
+      "component_ids": []
+    },
+    {
+      "n": 12,
+      "title": "Bench test at home",
+      "detail": "Hold the device level by the canopy edges at shoulder height over a hard floor and let go. It should land on the four cups and stay upright. Open the door: the pod must still be in its socket with the arrow on the line. Then shake the device hard and check again.",
+      "minutes": 5,
+      "tools": "",
+      "tip": "If the pod moved, tighten the bands by looping them once more round their toggles.",
+      "component_ids": []
+    }
+  ],
+  "drop_plan": {
+    "site": "The stairwell balcony or an open window on the drop side of the school building, with a hard, flat landing area below and nothing (cars, bushes, railings) within 4 m of the target.",
+    "height_floors": "7th floor",
+    "height_m": 25,
+    "roles": [
+      {
+        "role": "Dropper",
+        "task": "Carries the device up, loads the egg, checks the envelope, calls the sequence, releases level."
+      },
+      {
+        "role": "Spotter A and B",
+        "task": "Stand at the keep-out line either side of the target, keep people out, call 'zone clear', watch the fall and call 'device down'."
+      },
+      {
+        "role": "Timer / camera",
+        "task": "Films the drop from outside the keep-out line and times release to landing (the model predicts about 3.9 s)."
+      },
+      {
+        "role": "Egg checker",
+        "task": "Waits outside the line, walks in only after 'device down', opens the door, takes the egg out and records the result and the cup damage on the log sheet."
+      }
+    ],
+    "sequence": [
+      "Egg checker marks the target square on the ground directly under the release point and walks the keep-out circle; spotters take their places.",
+      "Dropper loads the egg, seats the pod, hooks the bands, latches the door, measures and writes the three dimensions on the log.",
+      "Dropper climbs to the floor for this drop and holds the device out over the rail, level, at arm's length, at least 1 m clear of the wall.",
+      "Spotters call 'zone clear'. Dropper calls 'dropping in 3, 2, 1' and opens both hands at the same time.",
+      "Everyone stays still until a spotter calls 'device down'. Then the egg checker goes in alone.",
+      "Reset per the between-drops procedure, log the result, and move up to the next floor of the ladder."
+    ],
+    "release_technique": "Hold the canopy by two opposite edges with the fingertips, elbows straight, device level, cups down. Do not throw, lower or push: open both hands at the same instant so it leaves with no spin and no sideways speed.",
+    "orientation_at_release": "Canopy up and level; the sleeve and cups hanging straight down; the door facing the building so the dropper can see the latch.",
+    "safety": [
+      "Nobody inside the 4 m keep-out circle from the moment the dropper leans over the rail until 'device down'.",
+      "The dropper keeps both feet on the floor and leans only to the elbows; a second person holds the dropper's belt or shirt at the top floor.",
+      "No drop if the device swings in the hands at the rail: wait for the gust to pass.",
+      "Hard, flat landing area only: no grass (it hides results), no stairs, no parked cars.",
+      "Eggs are raw: the checker carries wipes and a bag for a broken one."
+    ],
+    "landing_zone": "A 1.5 m square marked in chalk or tape on hard ground directly below the release point, inside a 4 m keep-out radius."
+  },
+  "physics": {
+    "design_height_m": 25,
+    "no_drag_impact_speed_ms": 22.1,
+    "mass_kg": 0.305,
+    "drag_area_m2": 0.0722,
+    "cd": 1.15,
+    "terminal_velocity_ms": 7.75,
+    "expected_impact_speed_ms": 7.7,
+    "time_to_impact_s": 3.8,
+    "stopping_distance_m": 0.085,
+    "stopping_stages": [
+      {
+        "name": "9 oz cups crush",
+        "cm": 7
+      },
+      {
+        "name": "floor pad and sponge compress",
+        "cm": 1.5
+      }
+    ],
+    "peak_decel_g": 57,
+    "worst_case_orientation": "a wall clip in the last 4 m that tumbles it onto a side or an edge of the sleeve",
+    "worst_case_impact_speed_ms": 9,
+    "worst_case_stopping_distance_m": 0.085,
+    "worst_case_peak_decel_g": 76,
+    "egg_tolerance_assumption_g": 90,
+    "safety_factor": 1.58,
+    "worst_case_safety_factor": 1.18,
+    "explanation": [
+      "Free fall with no air from 25 m: v = √(2 × 9.81 × 25) = 22.1 m/s (80 km/h).",
+      "Inputs: mass m = 0.305 kg with the egg, drag area A = 0.0722 m² (27 × 27 cm canopy minus the vent), drag coefficient Cd = 1.15 (flat plate face-on), air density ρ = 1.2 kg/m³.",
+      "Terminal velocity v_t = √(2 m g / (ρ Cd A)) = √(2 × 0.305 × 9.81 / (1.2 × 1.15 × 0.0722)) = 7.75 m/s.",
+      "Integrating m dv/dt = m g − ½ ρ Cd A v²: 90 % of v_t after 1.2 s (5.1 m down); impact after 3.8 s at 7.7 m/s. Every drop from the 3rd floor up lands at this speed.",
+      "Stopping distance for the egg, upright landing: 9 oz cups crush 7 cm + floor pad and sponge compress 1.5 cm = 8.5 cm. The pod sits in its socket, so the egg slows down with the frame through the whole path.",
+      "Average deceleration a = v² / (2 d) = 7.7² / (2 × 0.085) = 353 m/s² = 36 g.",
+      "Crushing cups and a sponge give a rounded (half-sine) pulse rather than a flat one, so the peak is taken as π/2 × average = 57 g, lasting about 22 ms.",
+      "Assumed tolerance 90 g for an egg held by a conforming cradle (an assumption, not a measurement): safety factor 1.58."
+    ],
+    "worst_case_explanation": [
+      "Assume it clips the wall and tumbles in the last 4 m. Sideways the canopy stops working, the drag area drops to roughly the sleeve face, and the speed climbs from 7.7 to about 9 m/s (32 km/h). This is the design input for every off-axis landing.",
+      "Worst orientation: a wall clip in the last 4 m that tumbles it onto a side or an edge of the sleeve.",
+      "Stopping distance on that face: 8.5 cm of cup crush, folding cardboard and pad (see sheet 12 for every face).",
+      "Average deceleration a = 9² / (2 × 0.085) = 476 m/s² = 49 g; spring-like peak π/2 × average = 76 g.",
+      "Against the assumed 90 g tolerance: safety factor 1.18 (thin: this is why the release must be level, spin-free and at least 1 m clear of the wall, and why the test ladder matters)."
+    ]
+  },
+  "compliance": [
+    {
+      "rule": "1",
+      "requirement": "Sketch the design and plan",
+      "our_value": "Sheet 05: top, front, side, isometric, pod section and suspension section, with dimensions; sheets 09 and 10 give the build and drop plan",
+      "pass": true
+    },
+    {
+      "rule": "2",
+      "requirement": "Measure the container in cm and compute Volume = L × W × H",
+      "our_value": "27 × 27 × 27.2 cm = 19,829 cm³ (sheet 06)",
+      "pass": true
+    },
+    {
+      "rule": "3",
+      "requirement": "Container less than 30 cm per side",
+      "our_value": "27, 27 and 27.2 cm; nothing sticks out past the canopy",
+      "pass": true
+    },
+    {
+      "rule": "4",
+      "requirement": "Mass of the device no more than 940 g",
+      "our_value": "305 g with the egg (sheet 07)",
+      "pass": true
+    },
+    {
+      "rule": "5",
+      "requirement": "Full list of materials",
+      "our_value": "13 lines with quantities, source, mass and cost (sheet 08)",
+      "pass": true
+    }
+  ],
+  "test_protocol": [
+    "Shake test: shake the loaded device hard in every direction, open the door, confirm the pod is still in its socket with the arrow on the line.",
+    "Cup fold test: press a 9 oz cup and a 3 oz cup on a kitchen scale until they start to fold; note the readings (about 2 to 3 kg and 1 to 2 kg).",
+    "Table drop: hold level at shoulder height over a hard floor and let go; it must land on the four cups and stay upright.",
+    "Door cycle: open, take the egg out, put it back, close, five times in a row, timing the last one (under one minute).",
+    "Envelope and mass check with the ruler and kitchen scale; write the numbers on the canopy."
+  ],
+  "failure_modes": [
+    {
+      "mode": "Bottom cups too soft: they crush flat and the floor hits the ground",
+      "likelihood": "medium",
+      "mitigation": "Kitchen-scale fold test before gluing; nest a second cup inside any soft one; the floor pad and sponge still give 1.5 cm"
+    },
+    {
+      "mode": "Bottom cups too stiff: the device bounces and the egg sees a spike",
+      "likelihood": "low",
+      "mitigation": "Pre-crease a cup that folds above 3 kg; the sponge pocket spreads the load over the shell"
+    },
+    {
+      "mode": "Tumbles after clipping the wall and lands on a side or corner",
+      "likelihood": "low to medium",
+      "mitigation": "Release 1 m clear of the wall, level, no spin; side and corner cups plus wall pads give 8.5 to 9 cm of stopping distance"
+    },
+    {
+      "mode": "Pod jumps out of the socket on impact",
+      "likelihood": "low",
+      "mitigation": "Two crossed retaining bands over the lid; shake test and table drop before the first real drop"
+    },
+    {
+      "mode": "Canopy tears off the sleeve on a side landing",
+      "likelihood": "low",
+      "mitigation": "Hot glue along all four walls plus a tape tab at each corner; the spare panel and tape splint a crease"
+    },
+    {
+      "mode": "Egg put back rotated or upside down between drops",
+      "likelihood": "low",
+      "mitigation": "N mark on the shell and on the sponge, UP arrow on the pod, line on the floor pad: three visual checks"
+    }
+  ],
+  "sketch_guide": {
+    "views": [
+      {
+        "view": "Top view",
+        "what_to_draw": "A 27 cm square with a 3 cm circle at the centre; four 5.7 cm circles 3.2 cm in from each corner (the bumper cups); a dashed 16 cm square for the sleeve below and four dashed 7.3 cm circles 4 cm in from its corners for the bottom cups.",
+        "key_dimensions": [
+          "27 × 27 cm",
+          "Ø 3 cm vent",
+          "16 cm sleeve",
+          "3.2 cm cup inset"
+        ]
+      },
+      {
+        "view": "Front view",
+        "what_to_draw": "The canopy as a thin 27 cm bar at the top with two cups on it; the 16 cm wide, 12 cm tall sleeve below with the 6 × 9 door in the middle and four side cups as circles; two 9 oz cups under the floor as trapezoids; total height 27.2 cm.",
+        "key_dimensions": [
+          "H = 27.2 cm",
+          "sleeve 16 × 12 cm",
+          "door 6 × 9 cm",
+          "cups 9.3 cm"
+        ]
+      },
+      {
+        "view": "Side view",
+        "what_to_draw": "Same outline as the front without the door; the front and back walls' side cups seen edge-on as trapezoids sticking out 5.5 cm to the canopy edge.",
+        "key_dimensions": [
+          "5.5 cm side cups",
+          "27 cm overall"
+        ]
+      },
+      {
+        "view": "Section A-A",
+        "what_to_draw": "A cut through the middle: the 2 cm pads on floor, ceiling and both walls, the socket ring, the pod with the egg wide end down, and the two bands over the lid; mark the 3 cm clearance from pod to wall pad.",
+        "key_dimensions": [
+          "pads 2 cm",
+          "pod Ø 5.2 × 7 cm",
+          "3 cm clearance"
+        ]
+      }
+    ],
+    "steps": [
+      "Draw the top view first: a 27 cm square, diagonals to find the centre, the 3 cm vent circle.",
+      "Add the four bumper cups as 5.7 cm circles 3.2 cm in from each corner, then the dashed 16 cm sleeve square and the dashed bottom cups.",
+      "Below it draw the front view: a 27 cm bar for the canopy, then the 16 × 12 cm sleeve hanging under its middle.",
+      "Draw the 6 × 9 cm door in the middle of the sleeve and the four side cups as circles 5.2 cm left and right of centre, 3 cm from the top and bottom.",
+      "Draw the two 9 oz cups under the floor corners as trapezoids 9.3 cm tall and the two bumper cups on top; write H = 27.2 cm on a dimension line.",
+      "Draw the section: walls, 2 cm pads all round, the socket ring, the pod, the egg wide end down, two bands over the lid.",
+      "Add dimension lines with arrows for 27, 16, 12, 9.3, 5.5 and 3 cm; write the name, scale 1:2 and date in a title block."
+    ]
+  },
+  "egg_prep": [
+    "Use a large egg at room temperature; check it in the light for hairline cracks and reject any you find.",
+    "Write a small N in pencil on the narrow end and your initials on the wide end.",
+    "Dry the shell; a damp egg slips in the pocket.",
+    "Seat it wide end down in the traced pocket with the N against the N on the sponge, close the lid, band the pod.",
+    "Keep the final egg in its carton until drop 4; use the four test eggs for the ladder."
+  ],
+  "changes_from_panel": [
+    "The judge panel ranked the Flat-Top Lantern Lander first on buildability and clarity but its physics judge found a fatal flaw shared by every hammock design: rubber bands are far too weak to slow a 100 g pod at 7 m/s, so the pod crosses its 'free travel' at full speed and hits a wall or pad. Mk2 therefore seats the pod in a socket on the floor pad, so the egg decelerates with the frame through the cups.",
+    "Cups now cover all six faces (4 × 9 oz below, 4 × 3 oz above, 16 × 3 oz on the walls) and every inner face carries a 2 cm pad, taking the omnidirectional idea from the Hex-Cage concept that scored best on physics.",
+    "The traced sponge pocket, the N mark and the UP arrow come from the Balloon-Cage concept's cradle, which the judges liked for putting the egg back in the same place.",
+    "The sleeve is 12 cm tall instead of 16: with no hammock there is nothing to hang, which saves mass and leaves room for 9.3 cm cups below and 5.5 cm cups above inside the 30 cm limit.",
+    "The balloon-pillow synthesis the panel produced was rejected by all of its own reviewers (pillows cannot carry the energy, build time over 3 h, egg access impossible as written) and is not used."
+  ],
+  "worst_case_statement": "The device may clip the wall and tumble onto a side, an edge, a corner or its top. Every face has its own cups, every inner face a pad, and the egg sits in a sponge pocket at the centre, so the model's peak load stays under the 90 g assumed for a cradled egg in every orientation, with the thinnest margin on a corner.",
+  "cost_statement": "Everything except the cups, a sponge and the eggs comes free from home: a cardboard box, newspaper, an egg carton, rubber bands, tape. A dollar store supplies two bags of paper cups and a sponge. Estimated total about $5.25 if nothing is at home, under $4 with eggs already in the fridge.",
+  "alternatives": [
+    {
+      "name": "Hex-Cage: six-cup omnidirectional skewer cube",
+      "approach": "space-frame",
+      "total_mass_g": 170,
+      "total_cost_usd": 4.5,
+      "worst_case_peak_decel_g": 41,
+      "panel_score": 16,
+      "why_not": "Scored lowest on the STUDENT DELIVERABLE: can one student sketch it in three dimensioned views, explain the physics to a teacher in two minutes, build it carefully today with few distinct parts, and present/defend it safely on drop day. Rewards clear geometry and an obvious drag -> suspension -> crumple story; penalises hard-to-draw geometry, fiddly calibration, and hand-wavy or self-contradicting numbers. lens (5/10)."
+    },
+    {
+      "name": "Flat-Top Lantern Lander (rigid 27 cm drag canopy, 8-band egg hammock, swappable paper-cup crumple legs top and bottom)",
+      "approach": "canopy-lander",
+      "total_mass_g": 274,
+      "total_cost_usd": 5,
+      "worst_case_peak_decel_g": 72,
+      "panel_score": 19,
+      "why_not": "In a side, edge or corner landing the egg pod crosses 5 cm of near-free sling travel and hits an uncushioned single-wall corrugated sleeve wall sitting on concrete; the only compliance is the pulp cell wall and sock (~0.5-1 cm), giving several hundred g on the egg's side."
+    },
+    {
+      "name": "Shuttlecock Dart (nose-first cup-nest crumple, sling-held egg, fixed drag dish)",
+      "approach": "shuttlecock",
+      "total_mass_g": 312,
+      "total_cost_usd": 6.6,
+      "worst_case_peak_decel_g": 56,
+      "panel_score": 16.5,
+      "why_not": "By its own arithmetic the worst case (56 g) exceeds its own 50 g tolerance assumption, and once the 1 cm sling travel is treated as free flight the egg's real stop in a side or inverted landing is ~1.5 cm of egg-carton pulp backed by cardboard on concrete, i.e. 150-250 g."
+    },
+    {
+      "name": "Stack-Crush Box Mk2 (collar-stabilised layered crumple box)",
+      "approach": "crumple-stack",
+      "total_mass_g": 690,
+      "total_cost_usd": 4.6,
+      "worst_case_peak_decel_g": 114,
+      "panel_score": 11,
+      "why_not": "At 690 g and 11-12.5 m/s the device carries 42-54 J; the design's own side-landing figure (114 g, +10-20% spikes) already exceeds its 120 g tolerance assumption, and once the 1.75-3 cm band travel is counted as free flight the egg stops in 0.6 cm of pulp at several hundred g."
+    }
+  ],
+  "panel": {
+    "winner_score": 16.5,
+    "per_lens": {
+      "PHYSICS AND SURVIVAL — recomputed v_t, impact speed and peak g from each design's own m, A, Cd and d (rho = 1.2); then re-derived the stopping distance the egg actually experiences after the sling bottoms out, and scored the worst landing orientation (side, edge, corner, inverted, wall clip). Score = P(egg survives 25 m onto concrete in a bad orientation) x 10.": 4,
+      "RULES AND BUILDABILITY: each side < 30 cm with margin (nothing protruding), device + egg <= 940 g with the mass budget re-added, a complete materials list obtainable today from home / supermarket / craft / hardware store, buildable in <= 3 h with no power tools, repeatable over 4 drops with cheap pre-cut swaps, every line costed in USD with a total under ~$10, and egg out / back to the same positively-located spot in under a minute.": 6.5,
+      "STUDENT DELIVERABLE: can one student sketch it in three dimensioned views, explain the physics to a teacher in two minutes, build it carefully today with few distinct parts, and present/defend it safely on drop day. Rewards clear geometry and an obvious drag -> suspension -> crumple story; penalises hard-to-draw geometry, fiddly calibration, and hand-wavy or self-contradicting numbers.": 6
+    },
+    "verification": [
+      {
+        "round": 1,
+        "blocking": [
+          "[Pessimist: worst-case landing orientation (side / edge / corner / inverted / wall clip), real stopping distance the egg gets, and cost / availability] Pillow stage cannot absorb the energy, so the egg breaks on the DESIGNED face landing. The spec needs the four balloons to supply 469 m/s2 x 0.326 kg = 153 N average over 4.5 cm. Four 9-inch balloons inflated to 6 cm (~2x linear stretch, ~3 kPa gauge at best) squashed to a 1.5 cm pancake give ~75 cm2 contact each: 3000 Pa x 0.0075 m2 = 22 N per balloon at END of stroke, ~45 N average for the set, i.e. ~2 J absorbed of the 12 J (spec speed) to 21 J (real speed) arriving. The remaining 10-19 J goes into the single-wall cardboard face hitting concrete through a latex pancake (~1 cm of real crush). The cage stops in ~1 cm at 400+ g; the core closes its 1.1 cm gap at essentially full speed (gap-closure time 9.8 ms vs cage stroke ~4.5 ms) and the egg's true stopping path is bubble wrap 0.7 + the 1 cm pocket floor compressing ~0.6 + lining 0.2 = ~1.5-2.5 cm. a = 8.55^2/(2 x 0.025) = 1460 m/s2 = 149 g average, 224 g at x1.5 peak; at the real 10.2-11.4 m/s it is 265-440 g average. Egg breaks on bottom, top and all four side faces.",
+          "[Pessimist: worst-case landing orientation (side / edge / corner / inverted / wall clip), real stopping distance the egg gets, and cost / availability] Peak factor 1.3 is unjustified for three stacked progressive cushions (balloon force ~ contact area ~ x to x^2, bubble wrap pops, sponge densifies). A progressive spring has peak/average >= 2. Even granting the spec's own 7.8 cm and 8.55 m/s: 47.8 g x 2 = 96 g, which is zero margin against its own 100 g assumption and a FAIL (0.73) against the 70 g conservative line the spec itself cites. Safety factor 1.6 is not real.",
+          "[Pessimist: worst-case landing orientation (side / edge / corner / inverted / wall clip), real stopping distance the egg gets, and cost / availability] Terminal velocity is understated: four 6 cm balloons in a 2x2 layer cover 12 x 12 cm, not 14 x 14 (you cannot flatten 6 cm spheres to 14 cm and keep 6 cm thickness), so the silhouette is a cross, not a 27 x 27 square: A = (15x15 + 4 x 12x6) = 513 cm2 = 0.0513 m2, not 0.0729. v_t = sqrt(6.396 / (1.2 x Cd x 0.0513)) = 10.2 m/s at Cd 1.0, 11.4 m/s at Cd 0.8 (rounded balloon lobes are plausibly Cd 0.8). KE 17-21 J, i.e. 45-80% more than the 11.9 J designed for. The spec's 'worst case' 9.6 m/s is below its own realistic design speed.",
+          "[Pessimist: worst-case landing orientation (side / edge / corner / inverted / wall clip), real stopping distance the egg gets, and cost / availability] Suspension travel is counted as stopping distance but is a free gap. Eight size-32 bands at modest stretch give < 10 N total on the ~130 g core (< 8 g), and the spec's own geometry (15 - 2x0.4 wall - 2x1.0 lining = 12.2 inner, core 10) gives 1.1 cm, not 1.5 cm. Subtracting it from every face path leaves 6.1-7.5 cm even on paper, and the real path per issue 1 is ~2 cm.",
+          "[Pessimist: worst-case landing orientation (side / edge / corner / inverted / wall clip), real stopping distance the egg gets, and cost / availability] Edge landing has no crumple element and exposes the taped cardboard edge as the first hard contact. Along the 45-degree edge diagonal the cage edge sits at 10.6 cm from centre, the nearest balloon rim at 13.25 cm: only 2.65 cm of balloon-rim contact at near-zero force before the single-wall cardboard edge hits concrete at 10-11 m/s. Edge crush of single-wall board ~1 cm, core then travels 1.56 cm free diagonally into two bubble-wrapped walls and the egg into a 1.25 cm sponge side wall: ~2 cm real path, 11.4^2 / (2 x 0.02) = 3250 m/s2 = 330 g average. The spec's 59 g for this face is not credible. Corner landing: the corner tube (15.6 cm radius) does take first contact and the cardboard corner crushes 1-2 cm, but the core still arrives at ~10 m/s over ~2.5 cm = 265 g average; also breaks.",
+          "[Sceptical physics teacher: recomputed terminal velocity, fall time, impact speed, geometry of the stopping path, series-stage impact dynamics, pillow force capacity, peak factor, and tolerance margin.] Peak factor 1.3 is not conservative for a spring-like stack, and the spec itself calls the stages 'more like a spring than a constant-force crumple'. A linear spring (and any series of linear springs) gives a triangular force profile, peak = 2.0 x average, not 1.3. Using the spec's own distances: face 47.8 g avg -> 96 g peak (margin 1.04, not 1.6); worst-case side at 9.56 m/s, 61.3 g avg -> 123 g peak, which EXCEEDS the 100 g assumption (and the spec's own 70 g cross-check line fails at 0.57). This single correction flips the worst-case verdict from pass to fail.",
+          "[Sceptical physics teacher: recomputed terminal velocity, fall time, impact speed, geometry of the stopping path, series-stage impact dynamics, pillow force capacity, peak factor, and tolerance margin.] The 1.5 cm suspension free travel does not exist. Cage inner = 15 - 2 x 0.4 = 14.2 cm; minus 1 cm bubble-wrap lining each side = 12.2 cm clear; core is 10 cm, so free travel is (12.2 - 10)/2 = 1.1 cm per side, and the body-diagonal free travel is 1.1 x sqrt(3) = 1.9 cm, not 2.6 cm. Corrected paths: face 7.4 cm (not 7.8), side 7.2 cm (not 7.6), corner about 6.5 cm (see next item). The sketch guide's '2.5 cm gap = 1 + 1.5' is also wrong: the gap is 2.1 cm.",
+          "[Sceptical physics teacher: recomputed terminal velocity, fall time, impact speed, geometry of the stopping path, series-stage impact dynamics, pillow force capacity, peak factor, and tolerance margin.] The stopping distances are summed as if the egg experienced all of them, but the stages are in SERIES behind masses that are only weakly coupled. The core (about 118 g with egg) hangs on 8 size-32 bands that can deliver only a few tens of newtons; while the cage decelerates on the pillow the core keeps its full 8.55 m/s, closes the 1.1 cm gap in about 4 ms, and hits the bubble wrap at essentially full speed when the cage has used only about 2.2 cm of its 4.5 cm pillow stroke (taking cage decel about 1400 m/s2). From that point the egg's remaining decelerating stroke is at most the cage's remaining 2.3 cm of pillow + 0.5 cm bubble wrap + 0.3 cm lining + 1.0 cm sponge = about 4.1 cm, giving 73.1/(2 x 0.041) = 891 m/s2 = 91 g AVERAGE on the egg and about 180 g peak for spring-like stages. The '7.8 cm = sum of stages' model is therefore not physically available to the egg; this is a credible path to a broken egg on the designed face landing, before any worst case.",
+          "[Sceptical physics teacher: recomputed terminal velocity, fall time, impact speed, geometry of the stopping path, series-stage impact dynamics, pillow force capacity, peak factor, and tolerance margin.] The balloon pillow has no stated force capacity, and an estimate says it cannot do the job assigned to it. Stopping 11.9 J (0.5 x 0.326 x 8.55^2) in 7.8 cm needs 153 N average on the whole device, and the pillow stage alone has to carry at least that (264 N if it absorbs the energy over its 4.5 cm stroke). Four slack 9-inch balloons at the typical 2-4 kPa gauge pressure of a party balloon, flattened to about 0.03 m2 of footprint, give only 60-120 N, i.e. 1.5-3 J over the last 2.5 cm of stroke; the first 2-3 cm of 'squash' of a barely-inflated balloon is almost force-free because slack latex deforms without compressing the air. Above a few kPa the latex either bursts or the balloons extrude sideways out of the loose produce bag. So most of the 4.5 cm pillow stroke absorbs little energy and the cage arrives at the flat bag with most of its kinetic energy. This is an estimate (no citation), but the spec offers no counter-number and the balloon stage is its biggest single stopping distance.",
+          "[Sceptical physics teacher: recomputed terminal velocity, fall time, impact speed, geometry of the stopping path, series-stage impact dynamics, pillow force capacity, peak factor, and tolerance margin.] The corner path of 9.0 cm does not exist. The pillows are 14 x 14 cm on a 15 cm face (an inset of 0.5 cm, not the claimed 0.5 cm overhang; both statements cannot be true), so at a cube corner the first contact is the 3 cm triangular tube, not '3 cm of three pillow corners' plus the tube. Realistic corner path: tube crush 1.5 cm + about 1 cm of glancing pillow edge + 1.9 cm diagonal free travel + 0.9 cm bubble wrap + 1.0 cm sponge = about 6.3-6.5 cm. At 9.56 m/s: 91.4/(2 x 0.065) = 703 m/s2 = 72 g average, 93 g with the spec's own 1.3 factor and 143 g with a spring factor of 2. The spec's corner verdict of 62-78 g rests on distances that are not there.",
+          "[Sceptical physics teacher: recomputed terminal velocity, fall time, impact speed, geometry of the stopping path, series-stage impact dynamics, pillow force capacity, peak factor, and tolerance margin.] Tolerance assumption is not conservative in combination with the margins claimed. 100 g peak is at the optimistic end of commonly used rough figures for a raw egg with distributed loading; the spec's own 'conservative' 70 g line already fails its worst case (0.88 by its numbers, 0.57 with a 2x peak factor). A design that only passes at the optimistic tolerance with a 1.3 peak factor is not designed against a conservative assumption.",
+          "[Experienced egg-drop maker: buildability in under 3 h with listed materials/tools, step precision, attachment integrity, survival of practice drops, and reusability (egg out/back in under a minute, 4-drop durability, spares and reset)] Egg access cannot be done as written, let alone in 45 s. The core-flap band L3 encircles a 10 cm core that hangs inside a 12.2 cm bubble-wrapped cavity with ~1.1 cm of clearance per side: there is no room to get fingers around the core to slip a band off or back on while the core is suspended on 8 bands. The sponge-sandwich bands L2 have the same problem one level down: the open procedure says 'lift S2 by its notch tab', but S2 is banded to S1 by two bands, and the stack sits snug between W1/W2 inside an 8.6 cm cavity with 0.4 cm total slack, so the whole banded stack has to be prised out of the core before the bands can come off. The real sequence is lid bands, lid, core band (unreachable), flap, W3, pry stack out, two bands off, S2, egg, then all of it in reverse; that is several minutes with the core bouncing on its bands, and it cannot be timed at 45 s. The reusability requirement (egg out in under a minute, back to the identical spot) fails on the procedure, not on the pocket.",
+          "[Experienced egg-drop maker: buildability in under 3 h with listed materials/tools, step precision, attachment integrity, survival of practice drops, and reusability (egg out/back in under a minute, 4-drop durability, spares and reset)] Corner crumple tube attachment will fail on the first hit. Step 5 says to hot-glue an equilateral triangular prism 'so one flat side sits on the corner': a 3 x 4 cm flat face laid against a cube vertex touches the cube at a single point, so the tube is held by a blob of glue bridging three faces at a point and will shear off on a corner or edge strike, exactly when it is needed. With the pillows at 12 cm actual footprint (see next item) the cardboard corner is the first thing to touch concrete on a corner landing, so the only corner protection is this glued-on tube.",
+          "[Experienced egg-drop maker: buildability in under 3 h with listed materials/tools, step precision, attachment integrity, survival of practice drops, and reusability (egg out/back in under a minute, 4-drop durability, spares and reset)] Pillow geometry is inconsistent and leaves edges and corners far less protected than claimed, so the practice-drop survival numbers are wrong. Four 6 cm balloons in a 2 x 2 layer give a 12 x 12 cm footprint, not 14 x 14, and a 14 cm pillow cannot 'overhang the cage edges by 0.5 cm' on a 15 cm face anyway. Recomputed with balloon centres 3 cm off the face and 3 cm from the centreline: on an edge-first landing the balloons protrude only 1.9 cm past the duct-taped cardboard edge (spec claims 4 cm of squash), and the corner tubes are only 4 cm long on a 15 cm edge, so the middle 7 cm of every edge hits concrete after ~2 cm. Edge stopping distance is ~5.8 cm, not 8.8: 90 g at 8.55 m/s and ~112 g at the 9.6 m/s worst case, over the 100 g design line. On a corner landing the balloon surfaces sit 0.5 cm INSIDE the cage corner along the body diagonal, so the claimed '3 cm of pillow corners' does not exist; corner d is ~7.5 cm and ~93 g at 9.6 m/s, marginal. A tumbling cube landing edge-first on the 3rd-floor practice drop is a likely crack.",
+          "[Experienced egg-drop maker: buildability in under 3 h with listed materials/tools, step precision, attachment integrity, survival of practice drops, and reusability (egg out/back in under a minute, 4-drop durability, spares and reset)] The 170-minute schedule has zero margin and the two longest steps are understated, so the build does not fit 3 h. Step 1 allots 15 min to lay out and cut 28 pieces (six 15 cm squares, six 10 cm squares, sixteen 4 x 9 cm strips) from 3-4 mm corrugated with two box-cutter passes per cut: that is 100+ cuts and realistically 25-35 min. Step 6 allots 20 min to carve a 1.5 cm deep egg-shaped recess (not a through cut) into a dry cellulose sponge with scissors, in 2 mm enlargement steps, plus a dimple in a second sponge; scissors cannot gouge a blind pocket in dry cellulose, it needs a damp sponge and a box cutter, and is a 30 min job for a first-timer. Add glue-gun warm-up, 32 balloons inflated by mouth, and the 1 m bench-drop series, and the realistic total is 3.5-4 h.",
+          "[Experienced egg-drop maker: buildability in under 3 h with listed materials/tools, step precision, attachment integrity, survival of practice drops, and reusability (egg out/back in under a minute, 4-drop durability, spares and reset)] Suspension as specified has no tension. A size 32 band (7.6 cm flat, 15.2 cm loop) lark's-headed through a core hole hangs as a ~3.8 cm doubled loop, but the core-corner-to-anchor distance is only 2.8 cm (sqrt(3 x 1.6^2)), so every band is slack by ~1 cm and the core rests on the floor bubble wrap instead of floating; the spec's own 'stretched to about 2.5 cm' and 'stretched 1.3x at rest' are contradictory. Step 7's tip (wrap once more around the straw) is the actual build method, and must be applied to all 8 bands, but it is written as an optional fix, so a student following the steps gets a core that does not 'spring back to centre' and the push test in the protocol fails."
+        ],
+        "non_blocking": [
+          "[Pessimist: worst-case landing orientation (side / edge / corner / inverted / wall clip), real stopping distance the egg gets, and cost / availability] Cost passes: 5.90 USD as written; worst case with duct tape and bubble wrap bought adds 2.50 = 8.40 USD, still under 10. Egg line (3 for 0.90) is optimistic for 2026 US prices; budget ~1.50. Nothing exotic; everything is dollar-store/supermarket. Mass budget adds to 326 g; 27 cm per side passes (would actually be ~25-27 cm given 12 cm balloon footprints).",
+          "[Pessimist: worst-case landing orientation (side / edge / corner / inverted / wall clip), real stopping distance the egg gets, and cost / availability] Sponge numbers: the pocket floor is only 1 cm thick (2.5 cm sponge, 1.5 cm pocket) and cannot 'compress 1.0 cm'; dry cellulose densifies at ~60-70% strain, so ~0.6 cm. The 1.25 cm sponge wall beside the egg on side landings is even thinner. The top (S2) path is actually better than the bottom (2 cm above the dimple).",
+          "[Pessimist: worst-case landing orientation (side / edge / corner / inverted / wall clip), real stopping distance the egg gets, and cost / availability] Local hard points inside the core: the 8 lark's-head band loops sit inside the core box at the corners under the 0.3 cm lining; after the sponge densifies, a side or corner hit loads the sponge corner onto a band knot and hole edge. Egg is ~3 cm from them, so not direct contact, but the 'no hard part inside the core' claim is overstated.",
+          "[Pessimist: worst-case landing orientation (side / edge / corner / inverted / wall clip), real stopping distance the egg gets, and cost / availability] Pillow description inconsistent: 'flatten each pillow to 14 x 14 x 6' is impossible with four 6 cm balloons; pillows are 12 x 12 x 6 and adjacent pillows do not meet at the edges as claimed (bottom pillow ends at x = 6, side pillow starts at x = 7.5).",
+          "[Pessimist: worst-case landing orientation (side / edge / corner / inverted / wall clip), real stopping distance the egg gets, and cost / availability] Reusability: egg access in ~45 s via lid, core flap, S2 is plausible and the traced pocket plus N mark is a genuine positive locator. Spares are tight: at the real impact speeds expect the landing-face balloons to burst every drop; 2 built pillows + 2 field-made covers exactly 4 drops with no slack.",
+          "[Pessimist: worst-case landing orientation (side / edge / corner / inverted / wall clip), real stopping distance the egg gets, and cost / availability] Honest aspects worth keeping if redesigned: the symmetric cube with every face identical, the numbered anchors, the pre-cut tape card, the test ladder and the 2 m corner-first bench drop. The fix is not more balloons but a real crush stage on the cage (e.g. 6-8 cm of stacked corrugated honeycomb or paper-cup/egg-carton crumple on every face) and a compliant, not slack, suspension.",
+          "[Sceptical physics teacher: recomputed terminal velocity, fall time, impact speed, geometry of the stopping path, series-stage impact dynamics, pillow force capacity, peak factor, and tolerance margin.] Drag numbers check out: with m = 0.326 kg, A = 0.0729 m2, Cd = 1.0, rho = 1.2: v_t = 8.55 m/s; numeric integration of m dv/dt = mg - 0.5 rho Cd A v^2 gives 6.67 m/s at 3.5 m, 8.29 m/s at 10.5 m, 8.51 m/s at 17.5 m, 8.55 m/s at 25 m, fall time 3.53 s; Cd = 0.8 gives 9.54 m/s and 3.29 s. Ladder speeds and the 2.3 s no-drag time are right. Cd = 1.0 for a soft-faced cube is a reasonable, slightly conservative pick; Cd = 0.8 sensitivity is sensible.",
+          "[Sceptical physics teacher: recomputed terminal velocity, fall time, impact speed, geometry of the stopping path, series-stage impact dynamics, pillow force capacity, peak factor, and tolerance margin.] Mass budget sums to 326 g and cost to 5.90 USD; cardboard mass (0.135 m2 x 450 g/m2 = 61 g) and balloon mass are plausible. Both limits (27 cm < 30 cm, 326 g < 940 g) are met with margin.",
+          "[Sceptical physics teacher: recomputed terminal velocity, fall time, impact speed, geometry of the stopping path, series-stage impact dynamics, pillow force capacity, peak factor, and tolerance margin.] Bubble wrap '1 cm layer compresses 0.5 cm' and 'core lining 0.3 cm compresses 0.3 cm' are generous: a bubble that compresses to zero has popped and is then a flat film; subsequent drops get less. Fine as a first-drop number, but the reset list should treat the cage lining as sacrificial too.",
+          "[Sceptical physics teacher: recomputed terminal velocity, fall time, impact speed, geometry of the stopping path, series-stage impact dynamics, pillow force capacity, peak factor, and tolerance margin.] Dry cellulose sponge is fairly stiff; the 1.0 cm compression under the egg at about 60 N over roughly 20 cm2 of pocket contact (about 30 kPa) is plausible but unverified. A quick thumb test at build time would settle it. A wet sponge would be far softer and should be explicitly forbidden (it also weakens the egg path).",
+          "[Sceptical physics teacher: recomputed terminal velocity, fall time, impact speed, geometry of the stopping path, series-stage impact dynamics, pillow force capacity, peak factor, and tolerance margin.] Lid on an inverted landing: the lid sits on the wall tops, so the load is compressive, fine; but the hinge is a single duct-tape strip and two size-32 bands, which must survive four drops of pillow-peel loads. Worth a hinge on both sides or a third band.",
+          "[Sceptical physics teacher: recomputed terminal velocity, fall time, impact speed, geometry of the stopping path, series-stage impact dynamics, pillow force capacity, peak factor, and tolerance margin.] The 'wall clip adds no fall speed' statement is fine for speed, but a clip imparts spin; for a symmetric cube that only changes which face lands, which the design tolerates.",
+          "[Sceptical physics teacher: recomputed terminal velocity, fall time, impact speed, geometry of the stopping path, series-stage impact dynamics, pillow force capacity, peak factor, and tolerance margin.] Mass asymmetry: the egg is 1 cm below centre, so the centre of mass is marginally below the geometric centre; for a cube this gives no meaningful restoring moment, so the device should be treated as a free tumbler, which the spec effectively does. Consistent.",
+          "[Sceptical physics teacher: recomputed terminal velocity, fall time, impact speed, geometry of the stopping path, series-stage impact dynamics, pillow force capacity, peak factor, and tolerance margin.] Materials list: 10 produce bags at 18 g total and 'about 2.6 g per balloon' are fine; the 14 x 14 pillow on a 15 cm face should be corrected to 15 x 15 so the pillows actually meet at edges as the edge-landing story assumes.",
+          "[Experienced egg-drop maker: buildability in under 3 h with listed materials/tools, step precision, attachment integrity, survival of practice drops, and reusability (egg out/back in under a minute, 4-drop durability, spares and reset)] Core free travel is 1.1 cm, not 1.5 cm: cage inner 14.2 minus 2 x 1.0 cm bubble wrap = 12.2, minus the 10 cm core, halved. Diagonal free travel is therefore 1.9 cm, not 2.6 cm. Face stopping distance becomes 7.4 cm and the face peak ~65 g instead of 62 g; still fine, but every internal distance in the spec is 0.4-0.7 cm optimistic.",
+          "[Experienced egg-drop maker: buildability in under 3 h with listed materials/tools, step precision, attachment integrity, survival of practice drops, and reusability (egg out/back in under a minute, 4-drop durability, spares and reset)] Core-flap band L3 around a 10 cm cube needs a 40 cm loop from a 15.2 cm band (2.6x stretch), beyond the spec's own 'stretch to 2x' rule, and it would run over the eight lark's-head knots at the core corners and cut into the cardboard edges.",
+          "[Experienced egg-drop maker: buildability in under 3 h with listed materials/tools, step precision, attachment integrity, survival of practice drops, and reusability (egg out/back in under a minute, 4-drop durability, spares and reset)] Anchor hole coordinates (6.6, 20.1, 6.6) are inside the cage cavity, not on a wall; the holes must be on a wall surface. Harmless to the build if the student follows the '1.5 cm from each corner' text, but the component table is wrong.",
+          "[Experienced egg-drop maker: buildability in under 3 h with listed materials/tools, step precision, attachment integrity, survival of practice drops, and reusability (egg out/back in under a minute, 4-drop durability, spares and reset)] Straw toggles taped over anchor holes 1.5 cm from the corners sit under the pillow bags, so swapping a suspension band on drop day means peeling a pillow first; the 1-minute band swap is more like 3-4 min.",
+          "[Experienced egg-drop maker: buildability in under 3 h with listed materials/tools, step precision, attachment integrity, survival of practice drops, and reusability (egg out/back in under a minute, 4-drop durability, spares and reset)] Lid latch notches are cut in the top edge of the front wall, which is also where the front pillow's top tape ear goes; workable but fiddly and the ear tends to get hooked by the band.",
+          "[Experienced egg-drop maker: buildability in under 3 h with listed materials/tools, step precision, attachment integrity, survival of practice drops, and reusability (egg out/back in under a minute, 4-drop durability, spares and reset)] Hot glue mass is understated: two 11 mm sticks are ~20 g, not 8 g. Total mass is ~338 g; irrelevant to the 940 g limit but the budget is not exact.",
+          "[Experienced egg-drop maker: buildability in under 3 h with listed materials/tools, step precision, attachment integrity, survival of practice drops, and reusability (egg out/back in under a minute, 4-drop durability, spares and reset)] Drag Cd 1.0 on A = 0.0729 m2 assumes a solid 27 cm silhouette; the lumpy balloon outline with rounded corners is closer to 0.065 m2, pushing v_t toward 9 m/s. Covered by the spec's own 9.6 m/s sensitivity, but the 'design' 8.6 m/s is a touch optimistic.",
+          "[Experienced egg-drop maker: buildability in under 3 h with listed materials/tools, step precision, attachment integrity, survival of practice drops, and reusability (egg out/back in under a minute, 4-drop durability, spares and reset)] Squashing a 6 cm balloon by 4.5 cm (75%) against grit-covered concrete is the pop regime; the produce bag helps but expect 2-3 pops per drop, not 'at most one'. With 2 pre-built spare pillows plus 2 field-made for three resets, spares are marginal; carry 4 pre-built.",
+          "[Experienced egg-drop maker: buildability in under 3 h with listed materials/tools, step precision, attachment integrity, survival of practice drops, and reusability (egg out/back in under a minute, 4-drop durability, spares and reset)] A replacement egg will not match a pocket traced from the first egg; the same-place feature degrades slightly after a swap. Trace the pocket a little generous or re-trace on the spot.",
+          "[Experienced egg-drop maker: buildability in under 3 h with listed materials/tools, step precision, attachment integrity, survival of practice drops, and reusability (egg out/back in under a minute, 4-drop durability, spares and reset)] Egg clamp: with a 1.5 cm pocket and 0.5 cm dimple, 2.5 cm of the egg's 4.5 cm width is between the sponge faces, and the two 1.9x-stretched sandwich bands put a continuous static squeeze on the egg through the dimple between drops; preferable to make the pocket 2 cm deep so the sponges nearly close and the bands clamp sponge, not egg.",
+          "[Experienced egg-drop maker: buildability in under 3 h with listed materials/tools, step precision, attachment integrity, survival of practice drops, and reusability (egg out/back in under a minute, 4-drop durability, spares and reset)] Inflating 32 balloons by mouth to a 6 cm template is doable but tiring; a cheap hand pump is a $1.25 line worth adding.",
+          "[Experienced egg-drop maker: buildability in under 3 h with listed materials/tools, step precision, attachment integrity, survival of practice drops, and reusability (egg out/back in under a minute, 4-drop durability, spares and reset)] Materials availability is fine: cardboard, produce bags, dollar-store balloons, sponges, bands, straws and tape are all obtainable today; cost 5.90 USD is credible."
+        ]
+      }
+    ],
+    "repaired": false,
+    "unresolved": [
+      "[Pessimist: worst-case landing orientation (side / edge / corner / inverted / wall clip), real stopping distance the egg gets, and cost / availability] Pillow stage cannot absorb the energy, so the egg breaks on the DESIGNED face landing. The spec needs the four balloons to supply 469 m/s2 x 0.326 kg = 153 N average over 4.5 cm. Four 9-inch balloons inflated to 6 cm (~2x linear stretch, ~3 kPa gauge at best) squashed to a 1.5 cm pancake give ~75 cm2 contact each: 3000 Pa x 0.0075 m2 = 22 N per balloon at END of stroke, ~45 N average for the set, i.e. ~2 J absorbed of the 12 J (spec speed) to 21 J (real speed) arriving. The remaining 10-19 J goes into the single-wall cardboard face hitting concrete through a latex pancake (~1 cm of real crush). The cage stops in ~1 cm at 400+ g; the core closes its 1.1 cm gap at essentially full speed (gap-closure time 9.8 ms vs cage stroke ~4.5 ms) and the egg's true stopping path is bubble wrap 0.7 + the 1 cm pocket floor compressing ~0.6 + lining 0.2 = ~1.5-2.5 cm. a = 8.55^2/(2 x 0.025) = 1460 m/s2 = 149 g average, 224 g at x1.5 peak; at the real 10.2-11.4 m/s it is 265-440 g average. Egg breaks on bottom, top and all four side faces.",
+      "[Pessimist: worst-case landing orientation (side / edge / corner / inverted / wall clip), real stopping distance the egg gets, and cost / availability] Peak factor 1.3 is unjustified for three stacked progressive cushions (balloon force ~ contact area ~ x to x^2, bubble wrap pops, sponge densifies). A progressive spring has peak/average >= 2. Even granting the spec's own 7.8 cm and 8.55 m/s: 47.8 g x 2 = 96 g, which is zero margin against its own 100 g assumption and a FAIL (0.73) against the 70 g conservative line the spec itself cites. Safety factor 1.6 is not real.",
+      "[Pessimist: worst-case landing orientation (side / edge / corner / inverted / wall clip), real stopping distance the egg gets, and cost / availability] Terminal velocity is understated: four 6 cm balloons in a 2x2 layer cover 12 x 12 cm, not 14 x 14 (you cannot flatten 6 cm spheres to 14 cm and keep 6 cm thickness), so the silhouette is a cross, not a 27 x 27 square: A = (15x15 + 4 x 12x6) = 513 cm2 = 0.0513 m2, not 0.0729. v_t = sqrt(6.396 / (1.2 x Cd x 0.0513)) = 10.2 m/s at Cd 1.0, 11.4 m/s at Cd 0.8 (rounded balloon lobes are plausibly Cd 0.8). KE 17-21 J, i.e. 45-80% more than the 11.9 J designed for. The spec's 'worst case' 9.6 m/s is below its own realistic design speed.",
+      "[Pessimist: worst-case landing orientation (side / edge / corner / inverted / wall clip), real stopping distance the egg gets, and cost / availability] Suspension travel is counted as stopping distance but is a free gap. Eight size-32 bands at modest stretch give < 10 N total on the ~130 g core (< 8 g), and the spec's own geometry (15 - 2x0.4 wall - 2x1.0 lining = 12.2 inner, core 10) gives 1.1 cm, not 1.5 cm. Subtracting it from every face path leaves 6.1-7.5 cm even on paper, and the real path per issue 1 is ~2 cm.",
+      "[Pessimist: worst-case landing orientation (side / edge / corner / inverted / wall clip), real stopping distance the egg gets, and cost / availability] Edge landing has no crumple element and exposes the taped cardboard edge as the first hard contact. Along the 45-degree edge diagonal the cage edge sits at 10.6 cm from centre, the nearest balloon rim at 13.25 cm: only 2.65 cm of balloon-rim contact at near-zero force before the single-wall cardboard edge hits concrete at 10-11 m/s. Edge crush of single-wall board ~1 cm, core then travels 1.56 cm free diagonally into two bubble-wrapped walls and the egg into a 1.25 cm sponge side wall: ~2 cm real path, 11.4^2 / (2 x 0.02) = 3250 m/s2 = 330 g average. The spec's 59 g for this face is not credible. Corner landing: the corner tube (15.6 cm radius) does take first contact and the cardboard corner crushes 1-2 cm, but the core still arrives at ~10 m/s over ~2.5 cm = 265 g average; also breaks.",
+      "[Sceptical physics teacher: recomputed terminal velocity, fall time, impact speed, geometry of the stopping path, series-stage impact dynamics, pillow force capacity, peak factor, and tolerance margin.] Peak factor 1.3 is not conservative for a spring-like stack, and the spec itself calls the stages 'more like a spring than a constant-force crumple'. A linear spring (and any series of linear springs) gives a triangular force profile, peak = 2.0 x average, not 1.3. Using the spec's own distances: face 47.8 g avg -> 96 g peak (margin 1.04, not 1.6); worst-case side at 9.56 m/s, 61.3 g avg -> 123 g peak, which EXCEEDS the 100 g assumption (and the spec's own 70 g cross-check line fails at 0.57). This single correction flips the worst-case verdict from pass to fail.",
+      "[Sceptical physics teacher: recomputed terminal velocity, fall time, impact speed, geometry of the stopping path, series-stage impact dynamics, pillow force capacity, peak factor, and tolerance margin.] The 1.5 cm suspension free travel does not exist. Cage inner = 15 - 2 x 0.4 = 14.2 cm; minus 1 cm bubble-wrap lining each side = 12.2 cm clear; core is 10 cm, so free travel is (12.2 - 10)/2 = 1.1 cm per side, and the body-diagonal free travel is 1.1 x sqrt(3) = 1.9 cm, not 2.6 cm. Corrected paths: face 7.4 cm (not 7.8), side 7.2 cm (not 7.6), corner about 6.5 cm (see next item). The sketch guide's '2.5 cm gap = 1 + 1.5' is also wrong: the gap is 2.1 cm.",
+      "[Sceptical physics teacher: recomputed terminal velocity, fall time, impact speed, geometry of the stopping path, series-stage impact dynamics, pillow force capacity, peak factor, and tolerance margin.] The stopping distances are summed as if the egg experienced all of them, but the stages are in SERIES behind masses that are only weakly coupled. The core (about 118 g with egg) hangs on 8 size-32 bands that can deliver only a few tens of newtons; while the cage decelerates on the pillow the core keeps its full 8.55 m/s, closes the 1.1 cm gap in about 4 ms, and hits the bubble wrap at essentially full speed when the cage has used only about 2.2 cm of its 4.5 cm pillow stroke (taking cage decel about 1400 m/s2). From that point the egg's remaining decelerating stroke is at most the cage's remaining 2.3 cm of pillow + 0.5 cm bubble wrap + 0.3 cm lining + 1.0 cm sponge = about 4.1 cm, giving 73.1/(2 x 0.041) = 891 m/s2 = 91 g AVERAGE on the egg and about 180 g peak for spring-like stages. The '7.8 cm = sum of stages' model is therefore not physically available to the egg; this is a credible path to a broken egg on the designed face landing, before any worst case.",
+      "[Sceptical physics teacher: recomputed terminal velocity, fall time, impact speed, geometry of the stopping path, series-stage impact dynamics, pillow force capacity, peak factor, and tolerance margin.] The balloon pillow has no stated force capacity, and an estimate says it cannot do the job assigned to it. Stopping 11.9 J (0.5 x 0.326 x 8.55^2) in 7.8 cm needs 153 N average on the whole device, and the pillow stage alone has to carry at least that (264 N if it absorbs the energy over its 4.5 cm stroke). Four slack 9-inch balloons at the typical 2-4 kPa gauge pressure of a party balloon, flattened to about 0.03 m2 of footprint, give only 60-120 N, i.e. 1.5-3 J over the last 2.5 cm of stroke; the first 2-3 cm of 'squash' of a barely-inflated balloon is almost force-free because slack latex deforms without compressing the air. Above a few kPa the latex either bursts or the balloons extrude sideways out of the loose produce bag. So most of the 4.5 cm pillow stroke absorbs little energy and the cage arrives at the flat bag with most of its kinetic energy. This is an estimate (no citation), but the spec offers no counter-number and the balloon stage is its biggest single stopping distance.",
+      "[Sceptical physics teacher: recomputed terminal velocity, fall time, impact speed, geometry of the stopping path, series-stage impact dynamics, pillow force capacity, peak factor, and tolerance margin.] The corner path of 9.0 cm does not exist. The pillows are 14 x 14 cm on a 15 cm face (an inset of 0.5 cm, not the claimed 0.5 cm overhang; both statements cannot be true), so at a cube corner the first contact is the 3 cm triangular tube, not '3 cm of three pillow corners' plus the tube. Realistic corner path: tube crush 1.5 cm + about 1 cm of glancing pillow edge + 1.9 cm diagonal free travel + 0.9 cm bubble wrap + 1.0 cm sponge = about 6.3-6.5 cm. At 9.56 m/s: 91.4/(2 x 0.065) = 703 m/s2 = 72 g average, 93 g with the spec's own 1.3 factor and 143 g with a spring factor of 2. The spec's corner verdict of 62-78 g rests on distances that are not there.",
+      "[Sceptical physics teacher: recomputed terminal velocity, fall time, impact speed, geometry of the stopping path, series-stage impact dynamics, pillow force capacity, peak factor, and tolerance margin.] Tolerance assumption is not conservative in combination with the margins claimed. 100 g peak is at the optimistic end of commonly used rough figures for a raw egg with distributed loading; the spec's own 'conservative' 70 g line already fails its worst case (0.88 by its numbers, 0.57 with a 2x peak factor). A design that only passes at the optimistic tolerance with a 1.3 peak factor is not designed against a conservative assumption.",
+      "[Experienced egg-drop maker: buildability in under 3 h with listed materials/tools, step precision, attachment integrity, survival of practice drops, and reusability (egg out/back in under a minute, 4-drop durability, spares and reset)] Egg access cannot be done as written, let alone in 45 s. The core-flap band L3 encircles a 10 cm core that hangs inside a 12.2 cm bubble-wrapped cavity with ~1.1 cm of clearance per side: there is no room to get fingers around the core to slip a band off or back on while the core is suspended on 8 bands. The sponge-sandwich bands L2 have the same problem one level down: the open procedure says 'lift S2 by its notch tab', but S2 is banded to S1 by two bands, and the stack sits snug between W1/W2 inside an 8.6 cm cavity with 0.4 cm total slack, so the whole banded stack has to be prised out of the core before the bands can come off. The real sequence is lid bands, lid, core band (unreachable), flap, W3, pry stack out, two bands off, S2, egg, then all of it in reverse; that is several minutes with the core bouncing on its bands, and it cannot be timed at 45 s. The reusability requirement (egg out in under a minute, back to the identical spot) fails on the procedure, not on the pocket.",
+      "[Experienced egg-drop maker: buildability in under 3 h with listed materials/tools, step precision, attachment integrity, survival of practice drops, and reusability (egg out/back in under a minute, 4-drop durability, spares and reset)] Corner crumple tube attachment will fail on the first hit. Step 5 says to hot-glue an equilateral triangular prism 'so one flat side sits on the corner': a 3 x 4 cm flat face laid against a cube vertex touches the cube at a single point, so the tube is held by a blob of glue bridging three faces at a point and will shear off on a corner or edge strike, exactly when it is needed. With the pillows at 12 cm actual footprint (see next item) the cardboard corner is the first thing to touch concrete on a corner landing, so the only corner protection is this glued-on tube.",
+      "[Experienced egg-drop maker: buildability in under 3 h with listed materials/tools, step precision, attachment integrity, survival of practice drops, and reusability (egg out/back in under a minute, 4-drop durability, spares and reset)] Pillow geometry is inconsistent and leaves edges and corners far less protected than claimed, so the practice-drop survival numbers are wrong. Four 6 cm balloons in a 2 x 2 layer give a 12 x 12 cm footprint, not 14 x 14, and a 14 cm pillow cannot 'overhang the cage edges by 0.5 cm' on a 15 cm face anyway. Recomputed with balloon centres 3 cm off the face and 3 cm from the centreline: on an edge-first landing the balloons protrude only 1.9 cm past the duct-taped cardboard edge (spec claims 4 cm of squash), and the corner tubes are only 4 cm long on a 15 cm edge, so the middle 7 cm of every edge hits concrete after ~2 cm. Edge stopping distance is ~5.8 cm, not 8.8: 90 g at 8.55 m/s and ~112 g at the 9.6 m/s worst case, over the 100 g design line. On a corner landing the balloon surfaces sit 0.5 cm INSIDE the cage corner along the body diagonal, so the claimed '3 cm of pillow corners' does not exist; corner d is ~7.5 cm and ~93 g at 9.6 m/s, marginal. A tumbling cube landing edge-first on the 3rd-floor practice drop is a likely crack.",
+      "[Experienced egg-drop maker: buildability in under 3 h with listed materials/tools, step precision, attachment integrity, survival of practice drops, and reusability (egg out/back in under a minute, 4-drop durability, spares and reset)] The 170-minute schedule has zero margin and the two longest steps are understated, so the build does not fit 3 h. Step 1 allots 15 min to lay out and cut 28 pieces (six 15 cm squares, six 10 cm squares, sixteen 4 x 9 cm strips) from 3-4 mm corrugated with two box-cutter passes per cut: that is 100+ cuts and realistically 25-35 min. Step 6 allots 20 min to carve a 1.5 cm deep egg-shaped recess (not a through cut) into a dry cellulose sponge with scissors, in 2 mm enlargement steps, plus a dimple in a second sponge; scissors cannot gouge a blind pocket in dry cellulose, it needs a damp sponge and a box cutter, and is a 30 min job for a first-timer. Add glue-gun warm-up, 32 balloons inflated by mouth, and the 1 m bench-drop series, and the realistic total is 3.5-4 h.",
+      "[Experienced egg-drop maker: buildability in under 3 h with listed materials/tools, step precision, attachment integrity, survival of practice drops, and reusability (egg out/back in under a minute, 4-drop durability, spares and reset)] Suspension as specified has no tension. A size 32 band (7.6 cm flat, 15.2 cm loop) lark's-headed through a core hole hangs as a ~3.8 cm doubled loop, but the core-corner-to-anchor distance is only 2.8 cm (sqrt(3 x 1.6^2)), so every band is slack by ~1 cm and the core rests on the floor bubble wrap instead of floating; the spec's own 'stretched to about 2.5 cm' and 'stretched 1.3x at rest' are contradictory. Step 7's tip (wrap once more around the straw) is the actual build method, and must be applied to all 8 bands, but it is written as an optional fix, so a student following the steps gets a core that does not 'spring back to centre' and the push test in the protocol fails."
+    ]
+  },
+  "page_title": "Egg Lander Build Sheet",
+  "project": "Egg drop challenge · 6 to 7 floors",
+  "author": "L. Deromedi · Karina",
+  "date": "2026-10-19",
+  "site": {
+    "floors": 7,
+    "keepout_m": 4
+  },
+  "measure_how": [
+    "Put the finished device on a flat table with the egg loaded and every spare part removed.",
+    "Measure the longest horizontal extent with a tape, corner to corner along one side, including anything that sticks out (bumpers, tape tabs). That is L.",
+    "Turn the tape 90° and measure the other horizontal extent the same way. That is W.",
+    "Stand a ruler on the table and read the highest point. That is H.",
+    "Write the three numbers on the canopy in marker, then multiply them: Volume = L × W × H in cm³.",
+    "Check each number against 30 cm. Press any bulge flat or trim it before the grader measures."
+  ],
+  "final_checklist": [
+    "All three sides measured and written on the device; each under 30 cm.",
+    "Device plus egg weighed on a kitchen scale; under 940 g.",
+    "Egg seated in its marked cradle, hatch closed and secured.",
+    "Every rubber band checked: no nicks, equal tension on all corners.",
+    "Sacrificial crumple parts fresh (or inspected and passed after the last drop).",
+    "Spares bag, tape and scissors in the dropper's pocket.",
+    "Landing target marked; keep-out radius clear; spotters in place.",
+    "Wind checked at the rail: postpone if the device swings in your hands.",
+    "Phone or camera rolling; timer ready.",
+    "Calls agreed: 'zone clear' → 'dropping in 3, 2, 1' → release → 'device down' → inspect."
+  ],
+  "geometry": {
+    "canopy": {
+      "w": 27,
+      "d": 27,
+      "t": 0.4,
+      "vent_r": 1.5
+    },
+    "sleeve": {
+      "w": 16,
+      "d": 16,
+      "h": 12,
+      "t": 0.4,
+      "door": {
+        "w": 6,
+        "h": 9,
+        "bottom_offset": 1
+      }
+    },
+    "cups_bottom": {
+      "h": 9.3,
+      "r_mouth": 3.65,
+      "r_base": 2.6,
+      "inset": 4,
+      "crush_to": 0.25
+    },
+    "cups_top": {
+      "h": 5.5,
+      "r_mouth": 2.85,
+      "r_base": 2,
+      "inset": 3.2
+    },
+    "cups_side": {
+      "h": 5.5,
+      "r_mouth": 2.85,
+      "r_base": 2,
+      "dx": 5.2,
+      "rows": [
+        3,
+        9
+      ]
+    },
+    "pads": {
+      "t": 2,
+      "floor": 12,
+      "wall_w": 12,
+      "wall_h": 8
+    },
+    "socket": {
+      "r": 3,
+      "h": 1.2,
+      "t": 0.3
+    },
+    "pod": {
+      "w": 5.2,
+      "h": 7,
+      "cell_h": 3.6
+    },
+    "sponge_t": 1,
+    "egg": {
+      "len": 6,
+      "dia": 4.5
+    },
+    "bands": {
+      "r": 0.15,
+      "anchor_from_top": 1
+    },
+    "anchors": {
+      "toggle_len": 3
+    },
+    "explode_cm": 9,
+    "labels": [
+      {
+        "id": "canopy",
+        "text": "Drag canopy 27 × 27 cm · Ø 3 cm vent",
+        "at": [
+          9,
+          0.4,
+          9
+        ]
+      },
+      {
+        "id": "cups_top",
+        "text": "Bumper cups ×4 for an upside-down landing",
+        "at": [
+          10.3,
+          5.5,
+          -10.3
+        ]
+      },
+      {
+        "id": "wall_front",
+        "text": "Sleeve 16 × 16 × 12 cm · door 6 × 9 cm",
+        "at": [
+          -5.5,
+          11.5,
+          0
+        ]
+      },
+      {
+        "id": "cups_side_r",
+        "text": "Side cups ×16, four per wall",
+        "at": [
+          13.5,
+          18.3,
+          5.2
+        ]
+      },
+      {
+        "id": "cups_bottom",
+        "text": "9 oz crumple cups ×4 · 7 cm of crush",
+        "at": [
+          -4,
+          0.3,
+          4
+        ]
+      },
+      {
+        "id": "pod",
+        "text": "Egg pod: carton cell + traced sponge pocket",
+        "at": [
+          2.6,
+          1.5,
+          0
+        ]
+      },
+      {
+        "id": "socket",
+        "text": "Socket ring: pod drops back into the same spot",
+        "at": [
+          3,
+          0.4,
+          0
+        ]
+      },
+      {
+        "id": "pad_wall_l",
+        "text": "2 cm newspaper pads on all six inner faces",
+        "at": [
+          -1,
+          3,
+          0
+        ]
+      },
+      {
+        "id": "bands",
+        "text": "Two bands hold the pod down",
+        "at": [
+          0,
+          19.3,
+          4
+        ]
+      }
+    ]
+  },
+  "sim": {
+    "static_sag_cm": 0.5,
+    "pulse_shape": "half-sine",
+    "crumple_m": 0.07,
+    "suspension_m": 0.015
+  },
+  "collaborators": [
+    "Léo Deromedi",
+    "Karina"
+  ]
+}

@@ -1,0 +1,927 @@
+{
+ "name": "Lantern Lander Mk2",
+ "tagline": "A flat cardboard canopy slows the fall to a third of free-fall speed; paper cups on all six faces crush on landing; the egg rides in a sponge pocket at the centre.",
+ "summary": "The device is a 27 × 27 × 27.2 cm lantern. On top, a 27 cm square of corrugated cardboard with a vent hole acts as a drag plate: the device weighs only about 300 g, so it settles at about 7.8 m/s instead of the 22 m/s it would reach with no air, and the low-hanging mass keeps it falling canopy-up like a shuttlecock. Under the canopy hangs a 16 × 16 × 12 cm cardboard sleeve. Four 9 oz paper cups under the floor are the main crumple zone; four 3 oz cups on the canopy cover an upside-down landing; sixteen 3 oz cups on the four walls cover side, edge and corner landings. Every inner face of the sleeve is lined with a 2 cm folded-newspaper pad. At the centre, the egg lies in a pocket traced into a kitchen sponge inside an egg-carton pod, which sits in a cardboard socket glued to the floor pad and is held by two rubber bands, so it goes back to exactly the same spot after every test drop. A door in the front wall lets the pod out in under a minute. Crushed cups and pads are swapped from a bag of pre-cut spares.",
+ "why_this_design": [
+  "Drag first: a 27 cm canopy on a 300 g device gives a terminal velocity near 7.8 m/s, reached before the 3rd floor, so the 25 m drop lands no harder than a 10 m drop.",
+  "Stable on the way down: the canopy is the centre of pressure and the sleeve, cups and egg hang 10 cm below it, so any tilt swings back canopy-up. The vent stops the plate rocking.",
+  "Crush on every face: cups under the floor, on the canopy and on all four walls mean a tumble or a wall clip still lands on 4 to 7 cm of paper cup, then a 2 cm pad, then the sponge.",
+  "No free flight inside: the egg pod sits in a socket on the floor pad instead of hanging on slack bands, so it decelerates with the frame and never hits a wall at full speed. The panel's physics judge found this flaw in every hammock design.",
+  "Cheap and repeatable: one cardboard box, two bags of paper cups, a sponge, an egg carton and rubber bands, about $5. The pocket, the socket and marker marks put the egg back in the same place; cups and pads swap from spares between drops."
+ ],
+ "dims_cm": {
+  "L": 27,
+  "W": 27,
+  "H": 27.2
+ },
+ "volume_cm3": 19828.8,
+ "limits": {
+  "max_side_cm": 30,
+  "max_mass_g": 940
+ },
+ "mass_budget_g": [
+  {
+   "item": "Raw large egg (payload)",
+   "grams": 58,
+   "note": "55 to 60 g typical"
+  },
+  {
+   "item": "Canopy: 27 × 27 cm single-wall corrugated, 3 cm vent, taped edges",
+   "grams": 38,
+   "note": "about 45 g/m² of board plus tape"
+  },
+  {
+   "item": "Sleeve: four 16 × 12 cm walls and a 16 × 16 cm floor, door cut out",
+   "grams": 44,
+   "note": "single-wall corrugated"
+  },
+  {
+   "item": "Pads: six folded-newspaper pads 2 cm thick on every inner face",
+   "grams": 30,
+   "note": "floor and ceiling 12 × 12 cm, walls 12 × 8 cm"
+  },
+  {
+   "item": "Egg pod: carton cell with lid, two 1 cm sponge discs, cardboard socket ring",
+   "grams": 18,
+   "note": "pulp cell 8 g, sponge 8 g, ring 2 g"
+  },
+  {
+   "item": "Bottom crumple cups: 4 × 9 oz paper cups",
+   "grams": 24,
+   "note": "6 g each; sacrificial"
+  },
+  {
+   "item": "Top bumper cups: 4 × 3 oz paper cups",
+   "grams": 10,
+   "note": "2.5 g each; sacrificial"
+  },
+  {
+   "item": "Side cups: 16 × 3 oz paper cups, four per wall",
+   "grams": 40,
+   "note": "2.5 g each; sacrificial"
+  },
+  {
+   "item": "Rubber bands (2 over the pod, 1 door latch) and 4 straw toggles",
+   "grams": 5,
+   "note": "#33 bands about 1 g each"
+  },
+  {
+   "item": "Hot glue and packing tape",
+   "grams": 36,
+   "note": "about 3 m of tape, 2 glue sticks"
+  },
+  {
+   "item": "Marker lines, numbers, tape tabs",
+   "grams": 2,
+   "note": ""
+  }
+ ],
+ "total_mass_g": 305,
+ "materials": [
+  {
+   "item": "Corrugated cardboard shipping box, single-wall",
+   "qty": "1 box, at least 40 × 30 × 30 cm (gives about 0.3 m² of flat board)",
+   "spec": "3 to 4 mm single-wall, dry and uncreased where the canopy and walls are cut",
+   "source": "home (any delivery box) or free from a supermarket",
+   "est_mass_g": 120,
+   "est_cost_usd": 0,
+   "purpose": "canopy, sleeve walls, floor, socket ring, spare wall panel"
+  },
+  {
+   "item": "Paper cups, 9 oz (about 9.3 cm tall)",
+   "qty": "8 (4 on the device + 4 spares)",
+   "spec": "plain paper, not foam, not waxed thick",
+   "source": "dollar store 20-pack",
+   "est_mass_g": 48,
+   "est_cost_usd": 1.25,
+   "purpose": "bottom crumple cups"
+  },
+  {
+   "item": "Paper cups, 3 oz bathroom size (about 5.5 cm tall)",
+   "qty": "40 (20 on the device + 20 spares)",
+   "spec": "plain paper",
+   "source": "dollar store 50-pack",
+   "est_mass_g": 100,
+   "est_cost_usd": 1.25,
+   "purpose": "top bumper cups and side cups"
+  },
+  {
+   "item": "Pulp egg carton, 12-count",
+   "qty": "1",
+   "spec": "paper pulp, not foam or plastic",
+   "source": "home or supermarket (comes with the eggs)",
+   "est_mass_g": 10,
+   "est_cost_usd": 0,
+   "purpose": "the egg pod: one cell plus its lid"
+  },
+  {
+   "item": "Kitchen cellulose sponge",
+   "qty": "1 (cut into two 1 cm discs)",
+   "spec": "plain sponge, no scouring side, about 11 × 7 × 2 cm",
+   "source": "home or dollar store",
+   "est_mass_g": 10,
+   "est_cost_usd": 1.25,
+   "purpose": "traced egg pocket below, cushion disc above"
+  },
+  {
+   "item": "Newspaper",
+   "qty": "about 12 sheets",
+   "spec": "any",
+   "source": "home, free",
+   "est_mass_g": 60,
+   "est_cost_usd": 0,
+   "purpose": "six folded 2 cm pads plus two spares"
+  },
+  {
+   "item": "Rubber bands, #33 (about 9 cm × 3 mm)",
+   "qty": "10 (3 on the device + 7 spares)",
+   "spec": "fresh, stretch to 2× without whitening",
+   "source": "home or dollar store",
+   "est_mass_g": 10,
+   "est_cost_usd": 0,
+   "purpose": "two bands hold the pod lid down into the socket, one latches the door"
+  },
+  {
+   "item": "Drinking straws",
+   "qty": "1, cut into four 3 cm toggles",
+   "spec": "plastic or paper",
+   "source": "home, free",
+   "est_mass_g": 1,
+   "est_cost_usd": 0,
+   "purpose": "toggles that hold the band loops outside the walls"
+  },
+  {
+   "item": "Packing tape",
+   "qty": "about 3 m",
+   "spec": "48 mm clear tape",
+   "source": "home",
+   "est_mass_g": 20,
+   "est_cost_usd": 0,
+   "purpose": "canopy edges, cup collars, door hinge, joints"
+  },
+  {
+   "item": "Hot glue sticks (with a glue gun)",
+   "qty": "2",
+   "spec": "standard 11 mm",
+   "source": "home",
+   "est_mass_g": 16,
+   "est_cost_usd": 0,
+   "purpose": "sleeve joints, cups to floor, canopy and walls, socket ring"
+  },
+  {
+   "item": "Permanent marker, pencil, ruler, scissors, box cutter",
+   "qty": "1 each",
+   "spec": "",
+   "source": "home",
+   "est_mass_g": 0,
+   "est_cost_usd": 0,
+   "purpose": "marking the pocket, numbers and registration lines; cutting"
+  },
+  {
+   "item": "Raw large eggs",
+   "qty": "5 (1 for the final drop + 4 for the test ladder)",
+   "spec": "large, no hairline cracks",
+   "source": "supermarket",
+   "est_mass_g": 58,
+   "est_cost_usd": 1.5,
+   "purpose": "payload and test eggs (half a dozen)"
+  },
+  {
+   "item": "Zip-top bag",
+   "qty": "1 gallon size",
+   "spec": "any",
+   "source": "home",
+   "est_mass_g": 5,
+   "est_cost_usd": 0,
+   "purpose": "spares bag carried on drop day"
+  }
+ ],
+ "total_cost_usd": 5.25,
+ "tools": [
+  "ruler",
+  "pencil",
+  "marker",
+  "scissors",
+  "box cutter",
+  "hot-glue gun",
+  "kitchen scale (optional)"
+ ],
+ "components": [
+  {
+   "id": "canopy",
+   "name": "Drag canopy",
+   "shape": "plate",
+   "size_cm": "27 × 27 × 0.4, vent Ø 3 at the centre",
+   "position_cm": {
+    "x": 0,
+    "y": 21.5,
+    "z": 0
+   },
+   "material": "single-wall corrugated, edges taped",
+   "color_hint": "tan",
+   "role": "drag plate and centre of pressure; the lid of the sleeve"
+  },
+  {
+   "id": "cups_top",
+   "name": "Top bumper cups ×4",
+   "shape": "cone",
+   "size_cm": "3 oz cup Ø 5.7/4 × 5.5, base down on each canopy corner",
+   "position_cm": {
+    "x": 10.3,
+    "y": 24.5,
+    "z": 10.3
+   },
+   "material": "paper cup",
+   "color_hint": "white",
+   "role": "crumple zone for an upside-down landing"
+  },
+  {
+   "id": "wall_front",
+   "name": "Sleeve wall, front, with door",
+   "shape": "plate",
+   "size_cm": "16 × 12 × 0.4, door 6 × 9",
+   "position_cm": {
+    "x": 0,
+    "y": 15.3,
+    "z": 8
+   },
+   "material": "corrugated",
+   "color_hint": "tan",
+   "role": "frame wall; the door lets the pod out"
+  },
+  {
+   "id": "wall_back",
+   "name": "Sleeve wall, back",
+   "shape": "plate",
+   "size_cm": "16 × 12 × 0.4",
+   "position_cm": {
+    "x": 0,
+    "y": 15.3,
+    "z": -8
+   },
+   "material": "corrugated",
+   "color_hint": "tan",
+   "role": "frame wall"
+  },
+  {
+   "id": "wall_left",
+   "name": "Sleeve wall, left",
+   "shape": "plate",
+   "size_cm": "16 × 12 × 0.4",
+   "position_cm": {
+    "x": -8,
+    "y": 15.3,
+    "z": 0
+   },
+   "material": "corrugated",
+   "color_hint": "tan",
+   "role": "frame wall"
+  },
+  {
+   "id": "wall_right",
+   "name": "Sleeve wall, right",
+   "shape": "plate",
+   "size_cm": "16 × 12 × 0.4",
+   "position_cm": {
+    "x": 8,
+    "y": 15.3,
+    "z": 0
+   },
+   "material": "corrugated",
+   "color_hint": "tan",
+   "role": "frame wall"
+  },
+  {
+   "id": "floor",
+   "name": "Sleeve floor",
+   "shape": "plate",
+   "size_cm": "15.2 × 15.2 × 0.4",
+   "position_cm": {
+    "x": 0,
+    "y": 9.5,
+    "z": 0
+   },
+   "material": "corrugated",
+   "color_hint": "tan",
+   "role": "carries the bottom cups and the floor pad"
+  },
+  {
+   "id": "pads_wall",
+   "name": "Wall pads ×4",
+   "shape": "box",
+   "size_cm": "12 × 8 × 2 each, on every inner wall",
+   "position_cm": {
+    "x": 0,
+    "y": 15.3,
+    "z": 6.6
+   },
+   "material": "folded newspaper",
+   "color_hint": "grey",
+   "role": "soft stop for the pod on a side landing"
+  },
+  {
+   "id": "pad_floor",
+   "name": "Floor pad",
+   "shape": "box",
+   "size_cm": "12 × 12 × 2",
+   "position_cm": {
+    "x": 0,
+    "y": 10.7,
+    "z": 0
+   },
+   "material": "folded newspaper",
+   "color_hint": "grey",
+   "role": "soft stop under the pod"
+  },
+  {
+   "id": "pad_top",
+   "name": "Ceiling pad",
+   "shape": "box",
+   "size_cm": "12 × 12 × 2 under the canopy",
+   "position_cm": {
+    "x": 0,
+    "y": 20.3,
+    "z": 0
+   },
+   "material": "folded newspaper",
+   "color_hint": "grey",
+   "role": "soft stop above the pod for an upside-down landing"
+  },
+  {
+   "id": "socket",
+   "name": "Pod socket",
+   "shape": "ring",
+   "size_cm": "Ø 6 × 1.2 cardboard ring glued to the floor pad",
+   "position_cm": {
+    "x": 0,
+    "y": 12.3,
+    "z": 0
+   },
+   "material": "cardboard strip",
+   "color_hint": "tan",
+   "role": "puts the pod back in exactly the same spot"
+  },
+  {
+   "id": "pod",
+   "name": "Egg pod",
+   "shape": "cylinder",
+   "size_cm": "Ø 5.2 × 7: carton cell + lid, two 1 cm sponge discs, pocket traced from the egg",
+   "position_cm": {
+    "x": 0,
+    "y": 15.2,
+    "z": 0
+   },
+   "material": "pulp egg carton, cellulose sponge",
+   "color_hint": "grey",
+   "role": "holds the egg wide end down, spreads the load over the shell"
+  },
+  {
+   "id": "egg",
+   "name": "Egg",
+   "shape": "ellipsoid",
+   "size_cm": "6 × 4.5",
+   "position_cm": {
+    "x": 0,
+    "y": 15.2,
+    "z": 0
+   },
+   "material": "raw large chicken egg",
+   "color_hint": "cream",
+   "role": "payload"
+  },
+  {
+   "id": "bands",
+   "name": "Retaining bands ×2",
+   "shape": "band",
+   "size_cm": "#33, crossed over the pod lid, wall to wall",
+   "position_cm": {
+    "x": 0,
+    "y": 19,
+    "z": 0
+   },
+   "material": "rubber",
+   "color_hint": "red",
+   "role": "hold the pod down into the socket"
+  },
+  {
+   "id": "toggles",
+   "name": "Straw toggles ×4",
+   "shape": "rod",
+   "size_cm": "3 cm straw pieces outside each wall",
+   "position_cm": {
+    "x": 0,
+    "y": 19.5,
+    "z": 8.3
+   },
+   "material": "drinking straw",
+   "color_hint": "white",
+   "role": "anchor the band loops through the wall holes"
+  },
+  {
+   "id": "cups_side",
+   "name": "Side cups ×16",
+   "shape": "cone",
+   "size_cm": "3 oz cup Ø 5.7/4 × 5.5, four per wall, mouth out",
+   "position_cm": {
+    "x": 5.2,
+    "y": 12.3,
+    "z": 10.8
+   },
+   "material": "paper cup",
+   "color_hint": "white",
+   "role": "crumple zone for side, edge and corner landings"
+  },
+  {
+   "id": "cups_bottom",
+   "name": "Bottom crumple cups ×4",
+   "shape": "cone",
+   "size_cm": "9 oz cup Ø 7.3/5.2 × 9.3, mouth down under each floor corner",
+   "position_cm": {
+    "x": 4,
+    "y": 4.65,
+    "z": 4
+   },
+   "material": "paper cup",
+   "color_hint": "white",
+   "role": "main crumple zone: 7 cm of crush"
+  }
+ ],
+ "protection_by_face": [
+  {
+   "face": "Bottom (upright, the designed landing)",
+   "protection": "4 × 9 oz cups crush 7 cm, then the floor pad and the sponge disc under the egg",
+   "stopping_distance_cm": 8.5,
+   "peak_g": 0,
+   "verdict": "",
+   "speed": "designed"
+  },
+  {
+   "face": "Top (upside-down)",
+   "protection": "4 × 3 oz bumper cups crush 4 cm, the canopy flexes 1 cm, then the ceiling pad and the sponge disc over the egg",
+   "stopping_distance_cm": 6.5,
+   "peak_g": 0,
+   "verdict": "",
+   "speed": "designed"
+  },
+  {
+   "face": "Side (any of the four walls)",
+   "protection": "4 side cups crush 4 cm, the canopy edge and wall fold about 3 cm, then the wall pad and the sponge around the egg",
+   "stopping_distance_cm": 8.5,
+   "peak_g": 0,
+   "verdict": "",
+   "speed": "tumbling"
+  },
+  {
+   "face": "Edge (two walls meet the ground)",
+   "protection": "two side cups from each wall crush at an angle, canopy edge folds, then the two wall pads",
+   "stopping_distance_cm": 8.5,
+   "peak_g": 0,
+   "verdict": "",
+   "speed": "tumbling"
+  },
+  {
+   "face": "Corner (bottom corner first)",
+   "protection": "one 9 oz cup crushes diagonally, two side cups fold, canopy corner folds, then the floor and wall pads",
+   "stopping_distance_cm": 9.0,
+   "peak_g": 0,
+   "verdict": "",
+   "speed": "tumbling"
+  }
+ ],
+ "egg_access": {
+  "open": "Pull the band off the door tab and swing the door down on its tape hinge. Hook a finger under the two retaining bands and slip them off their toggles on the far wall. Slide the pod out through the door by its tab.",
+  "seat": "Open the pod lid. Lift the egg out by the narrow end, check it and dry it. Put the egg back wide end down into the traced pocket with the pencil N mark on the shell against the N on the sponge. Close the lid, push the pod back through the door until it drops into the socket ring with its UP arrow in line with the marker line on the floor pad.",
+  "close": "Hook the two retaining bands back onto their toggles (numbered 1 and 2), swing the door up and loop the latch band over its tab. Look through the vent: the lid should be flat and centred.",
+  "seconds": 50,
+  "same_place_feature": "Three things fix the position: the egg can only sit one way in the pocket cut to its outline, the pod can only drop into the socket ring, and the UP arrow on the pod meets the line on the floor pad."
+ },
+ "reset_between_drops": [
+  "Carry the device to the inspection table. Open the door and take the egg out before touching anything else; note whether it is intact.",
+  "Look at the four bottom cups: any cup shorter than 5 cm or split is swapped (peel the tape collar, twist the cup off its glue dab, hot-glue or tape a fresh cup on, re-tape the collar). Expect to swap all four after the 5th-floor and top drops.",
+  "Check the side and top cups: swap any that are dented more than 1 cm.",
+  "Press the floor pad and wall pads: swap any pad that stays below 1.5 cm thick.",
+  "Check the two retaining bands and the door band for nicks; replace from the bag if in doubt.",
+  "Look along the canopy: if an edge or corner is folded, splint it with a strip of tape on both sides.",
+  "Re-seat the egg (or a fresh test egg) in the pocket, pod into the socket, bands on, door latched.",
+  "Re-measure L, W, H and write the numbers on the drop log; climb to the next floor."
+ ],
+ "test_ladder": [
+  {
+   "drop": 1,
+   "height_floors": "1st floor window or landing",
+   "height_m": 3.5,
+   "purpose": "Proves the egg access, the socket and the cups work before anything is at risk: does it land canopy-up, do the bottom cups crush evenly?",
+   "pass_criteria": "Egg intact, device lands within 1 m of the target, cups crush less than half, nothing came loose.",
+   "expected_impact_speed_ms": 0
+  },
+  {
+   "drop": 2,
+   "height_floors": "3rd floor",
+   "height_m": 10.5,
+   "purpose": "First drop at terminal velocity: from here up the impact speed no longer rises, so this is the real landing test.",
+   "pass_criteria": "Egg intact after a full-speed landing; swap cups; note how far the pod moved in its socket (it should not).",
+   "expected_impact_speed_ms": 0
+  },
+  {
+   "drop": 3,
+   "height_floors": "5th floor",
+   "height_m": 17.5,
+   "purpose": "Repeat at full speed with fresh cups to confirm the swap procedure gives the same result.",
+   "pass_criteria": "Egg intact; the reset took under 5 minutes; measurements still under 30 cm.",
+   "expected_impact_speed_ms": 0
+  },
+  {
+   "drop": 4,
+   "height_floors": "7th floor (the graded drop)",
+   "height_m": 25,
+   "purpose": "The real thing, with the final egg and fresh cups and pads.",
+   "pass_criteria": "Egg intact.",
+   "expected_impact_speed_ms": 0
+  }
+ ],
+ "spares": [
+  {
+   "item": "9 oz cups, pre-glued collar tape strips ready",
+   "qty_spare": "4",
+   "swap_minutes": 4,
+   "when": "a bottom cup is under 5 cm tall or split (expected after every full-speed drop)"
+  },
+  {
+   "item": "3 oz cups",
+   "qty_spare": "20",
+   "swap_minutes": 2,
+   "when": "a side or top cup is dented more than 1 cm"
+  },
+  {
+   "item": "Folded newspaper pads 2 cm",
+   "qty_spare": "2",
+   "swap_minutes": 2,
+   "when": "a pad stays compressed below 1.5 cm"
+  },
+  {
+   "item": "Rubber bands #33",
+   "qty_spare": "7",
+   "swap_minutes": 1,
+   "when": "a band is nicked or no longer snaps back"
+  },
+  {
+   "item": "Spare 16 × 12 cm wall panel and tape",
+   "qty_spare": "1",
+   "swap_minutes": 3,
+   "when": "a wall is creased after a side landing: tape the panel over it as a splint"
+  },
+  {
+   "item": "Test eggs",
+   "qty_spare": "4",
+   "swap_minutes": 1,
+   "when": "one egg per ladder drop; the final egg stays in its carton until drop 4"
+  }
+ ],
+ "build_steps": [
+  {
+   "n": 1,
+   "title": "Cut the canopy",
+   "detail": "Mark a 27 × 27 cm square on flat, uncreased cardboard and cut it with the box cutter against the ruler in two passes. Find the centre by drawing both diagonals and cut a 3 cm hole there. Fold a strip of packing tape over all four edges. On the underside draw a 16 × 16 cm square centred on the hole.",
+   "minutes": 15,
+   "tools": "ruler, pencil, box cutter, tape",
+   "tip": "Cut on a scrap board and keep the flutes running the same way on every panel.",
+   "component_ids": [
+    "canopy"
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Cut and fold the sleeve",
+   "detail": "Cut one strip 64.8 × 12 cm (four 16 cm panels plus a 0.8 cm glue tab). Score the three fold lines lightly with the box cutter against the ruler, fold into a 16 × 16 cm square tube and hot-glue the tab inside. Cut a 15.2 × 15.2 cm floor and glue it flush into the bottom of the tube.",
+   "minutes": 20,
+   "tools": "ruler, box cutter, hot glue",
+   "tip": "Score only the top liner of the board so the fold stays sharp without cracking.",
+   "component_ids": [
+    "wall_front",
+    "wall_back",
+    "wall_left",
+    "wall_right",
+    "floor"
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Cut the door",
+   "detail": "On one wall (this becomes the front), draw a 6 cm wide × 9 cm tall rectangle centred left-to-right with its bottom edge 1 cm above the floor. Cut the two sides and the bottom, leave the top as a hinge and run tape over the hinge. Glue a small cardboard tab to the outside bottom of the door and a matching tab on the wall below it for the latch band.",
+   "minutes": 8,
+   "tools": "ruler, box cutter, tape, hot glue",
+   "tip": "The pod is 5.2 cm wide; test that it passes through before you glue anything else.",
+   "component_ids": [
+    "wall_front"
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Make the pads",
+   "detail": "Fold newspaper into two 12 × 12 cm pads and four 12 × 8 cm pads, each 2 cm thick (about 8 layers folded, then taped round the middle). Tape one square pad to the floor. Tape a rectangular pad to the inside of each wall, centred, 2 cm above the floor pad. Keep the second square pad for the canopy.",
+   "minutes": 12,
+   "tools": "tape",
+   "tip": "Fold the pads so the open edges face the wall: they crush more evenly.",
+   "component_ids": [
+    "pad_floor",
+    "pads_wall"
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Make the pod and its socket",
+   "detail": "Cut one cell from the egg carton together with the lid section directly above it, keeping the hinge. Cut two 1 cm thick discs from the sponge to fit the cell. Stand the egg wide end down on one disc, trace round it with the marker and cut the pocket to half the disc thickness; write N at the narrow end. Glue that disc into the cell and the other disc inside the lid. Draw a big UP arrow on the outside of the lid. Cut a 1.2 × 20 cm cardboard strip, roll it into a ring the pod base just fits into, tape it, and hot-glue the ring to the centre of the floor pad. Draw a line across the floor pad that the UP arrow will meet.",
+   "minutes": 15,
+   "tools": "scissors, marker, hot glue",
+   "tip": "Write N on the egg shell too with a pencil so the egg goes back the same way every time.",
+   "component_ids": [
+    "pod",
+    "egg",
+    "socket"
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Fit the retaining bands",
+   "detail": "Punch a hole with a pencil tip at the top centre of each wall, 1 cm below the top edge. Push a #33 band through the front hole from inside and slip a 3 cm straw toggle through the loop outside; stretch the band across the sleeve, over the socket, out through the back hole and onto a second toggle. Repeat left to right. Number the four toggles 1 to 4 so a swapped band always goes back to the same holes.",
+   "minutes": 8,
+   "tools": "pencil, scissors",
+   "tip": "The bands should press the pod lid down firmly but still let you slip them off with one finger.",
+   "component_ids": [
+    "bands",
+    "toggles"
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Glue the canopy on",
+   "detail": "Tape the second square pad to the underside of the canopy inside the 16 cm square. Run hot glue along the top edges of the four walls, press the canopy on with the pad inside the sleeve, hold for a minute, then add a tape tab over the joint at each corner outside.",
+   "minutes": 8,
+   "tools": "hot glue, tape",
+   "tip": "Check through the vent that the pad sits flat before the glue sets.",
+   "component_ids": [
+    "pad_top",
+    "canopy"
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Fit the bottom crumple cups",
+   "detail": "Hot-glue the base of a 9 oz cup under each corner of the floor, mouth down, with its centre 4 cm in from each edge, and wrap a collar of tape from cup to floor. The cup mouths are the only part that touches the ground.",
+   "minutes": 8,
+   "tools": "hot glue, tape",
+   "tip": "Press each cup on a kitchen scale first: it should start to fold between 2 and 3 kg. A cup that folds much easier gets a second cup nested inside.",
+   "component_ids": [
+    "cups_bottom"
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Fit the top and side cups",
+   "detail": "Hot-glue four 3 oz cups base down on the four top corners of the canopy, 3.2 cm in from the edges, mouths up. Hot-glue four 3 oz cups on each wall with bases against the wall and mouths outward: two at 3 cm above the floor and two at 3 cm below the top, each 5.2 cm left and right of the wall centre, clear of the door. Tape collars round every cup base.",
+   "minutes": 20,
+   "tools": "hot glue, tape",
+   "tip": "Squeeze each 3 oz cup gently to put four shallow vertical creases in it so it buckles instead of splitting.",
+   "component_ids": [
+    "cups_top",
+    "cups_side"
+   ]
+  },
+  {
+   "n": 10,
+   "title": "Load and check the envelope",
+   "detail": "Seat a test egg, close the pod, drop the pod into the socket with the UP arrow on the line, hook the bands, latch the door. Measure L and W across the canopy (27 cm) and H from the cup mouths on the floor to the top of the bumper cups (27.2 cm). Weigh if you can: about 305 g with the egg. Write the three numbers on the canopy.",
+   "minutes": 5,
+   "tools": "ruler, kitchen scale",
+   "tip": "Nothing may stick out past the canopy edge: the side cups end exactly at it.",
+   "component_ids": []
+  },
+  {
+   "n": 11,
+   "title": "Pack the spares bag",
+   "detail": "Four 9 oz cups and twenty 3 oz cups (pre-creased), two folded pads, seven bands, the spare wall panel, tape, scissors, marker, the drop log sheet and the test eggs in their carton.",
+   "minutes": 5,
+   "tools": "",
+   "tip": "Pre-cut the tape collars and stick them to a plastic card so a cup swap takes two minutes.",
+   "component_ids": []
+  },
+  {
+   "n": 12,
+   "title": "Bench test at home",
+   "detail": "Hold the device level by the canopy edges at shoulder height over a hard floor and let go. It should land on the four cups and stay upright. Open the door: the pod must still be in its socket with the arrow on the line. Then shake the device hard and check again.",
+   "minutes": 5,
+   "tools": "",
+   "tip": "If the pod moved, tighten the bands by looping them once more round their toggles.",
+   "component_ids": []
+  }
+ ],
+ "drop_plan": {
+  "site": "The stairwell balcony or an open window on the drop side of the school building, with a hard, flat landing area below and nothing (cars, bushes, railings) within 4 m of the target.",
+  "height_floors": "7th floor",
+  "height_m": 25,
+  "roles": [
+   {
+    "role": "Dropper",
+    "task": "Carries the device up, loads the egg, checks the envelope, calls the sequence, releases level."
+   },
+   {
+    "role": "Spotter A and B",
+    "task": "Stand at the keep-out line either side of the target, keep people out, call 'zone clear', watch the fall and call 'device down'."
+   },
+   {
+    "role": "Timer / camera",
+    "task": "Films the drop from outside the keep-out line and times release to landing (the model predicts about 3.9 s)."
+   },
+   {
+    "role": "Egg checker",
+    "task": "Waits outside the line, walks in only after 'device down', opens the door, takes the egg out and records the result and the cup damage on the log sheet."
+   }
+  ],
+  "sequence": [
+   "Egg checker marks the target square on the ground directly under the release point and walks the keep-out circle; spotters take their places.",
+   "Dropper loads the egg, seats the pod, hooks the bands, latches the door, measures and writes the three dimensions on the log.",
+   "Dropper climbs to the floor for this drop and holds the device out over the rail, level, at arm's length, at least 1 m clear of the wall.",
+   "Spotters call 'zone clear'. Dropper calls 'dropping in 3, 2, 1' and opens both hands at the same time.",
+   "Everyone stays still until a spotter calls 'device down'. Then the egg checker goes in alone.",
+   "Reset per the between-drops procedure, log the result, and move up to the next floor of the ladder."
+  ],
+  "release_technique": "Hold the canopy by two opposite edges with the fingertips, elbows straight, device level, cups down. Do not throw, lower or push: open both hands at the same instant so it leaves with no spin and no sideways speed.",
+  "orientation_at_release": "Canopy up and level; the sleeve and cups hanging straight down; the door facing the building so the dropper can see the latch.",
+  "safety": [
+   "Nobody inside the 4 m keep-out circle from the moment the dropper leans over the rail until 'device down'.",
+   "The dropper keeps both feet on the floor and leans only to the elbows; a second person holds the dropper's belt or shirt at the top floor.",
+   "No drop if the device swings in the hands at the rail: wait for the gust to pass.",
+   "Hard, flat landing area only: no grass (it hides results), no stairs, no parked cars.",
+   "Eggs are raw: the checker carries wipes and a bag for a broken one."
+  ],
+  "landing_zone": "A 1.5 m square marked in chalk or tape on hard ground directly below the release point, inside a 4 m keep-out radius."
+ },
+ "physics": {
+  "design_height_m": 25,
+  "no_drag_impact_speed_ms": 0,
+  "mass_kg": 0.305,
+  "drag_area_m2": 0.0722,
+  "cd": 1.15,
+  "terminal_velocity_ms": 0,
+  "expected_impact_speed_ms": 0,
+  "time_to_impact_s": 0,
+  "stopping_distance_m": 0.085,
+  "stopping_stages": [
+   {
+    "name": "9 oz cups crush",
+    "cm": 7.0
+   },
+   {
+    "name": "floor pad and sponge compress",
+    "cm": 1.5
+   }
+  ],
+  "peak_decel_g": 0,
+  "worst_case_orientation": "a wall clip in the last 4 m that tumbles it onto a side or an edge of the sleeve",
+  "worst_case_impact_speed_ms": 9.0,
+  "worst_case_stopping_distance_m": 0.085,
+  "worst_case_peak_decel_g": 0,
+  "egg_tolerance_assumption_g": 90,
+  "safety_factor": 0,
+  "worst_case_safety_factor": 0,
+  "explanation": [],
+  "worst_case_explanation": []
+ },
+ "compliance": [
+  {
+   "rule": "1",
+   "requirement": "Sketch the design and plan",
+   "our_value": "Sheet 05: top, front, side, isometric, pod section and suspension section, with dimensions; sheets 09 and 10 give the build and drop plan",
+   "pass": true
+  },
+  {
+   "rule": "2",
+   "requirement": "Measure the container in cm and compute Volume = L × W × H",
+   "our_value": "27 × 27 × 27.2 cm = 19,829 cm³ (sheet 06)",
+   "pass": true
+  },
+  {
+   "rule": "3",
+   "requirement": "Container less than 30 cm per side",
+   "our_value": "27, 27 and 27.2 cm; nothing sticks out past the canopy",
+   "pass": true
+  },
+  {
+   "rule": "4",
+   "requirement": "Mass of the device no more than 940 g",
+   "our_value": "305 g with the egg (sheet 07)",
+   "pass": true
+  },
+  {
+   "rule": "5",
+   "requirement": "Full list of materials",
+   "our_value": "13 lines with quantities, source, mass and cost (sheet 08)",
+   "pass": true
+  }
+ ],
+ "test_protocol": [
+  "Shake test: shake the loaded device hard in every direction, open the door, confirm the pod is still in its socket with the arrow on the line.",
+  "Cup fold test: press a 9 oz cup and a 3 oz cup on a kitchen scale until they start to fold; note the readings (about 2 to 3 kg and 1 to 2 kg).",
+  "Table drop: hold level at shoulder height over a hard floor and let go; it must land on the four cups and stay upright.",
+  "Door cycle: open, take the egg out, put it back, close, five times in a row, timing the last one (under one minute).",
+  "Envelope and mass check with the ruler and kitchen scale; write the numbers on the canopy."
+ ],
+ "failure_modes": [
+  {
+   "mode": "Bottom cups too soft: they crush flat and the floor hits the ground",
+   "likelihood": "medium",
+   "mitigation": "Kitchen-scale fold test before gluing; nest a second cup inside any soft one; the floor pad and sponge still give 1.5 cm"
+  },
+  {
+   "mode": "Bottom cups too stiff: the device bounces and the egg sees a spike",
+   "likelihood": "low",
+   "mitigation": "Pre-crease a cup that folds above 3 kg; the sponge pocket spreads the load over the shell"
+  },
+  {
+   "mode": "Tumbles after clipping the wall and lands on a side or corner",
+   "likelihood": "low to medium",
+   "mitigation": "Release 1 m clear of the wall, level, no spin; side and corner cups plus wall pads give 8.5 to 9 cm of stopping distance"
+  },
+  {
+   "mode": "Pod jumps out of the socket on impact",
+   "likelihood": "low",
+   "mitigation": "Two crossed retaining bands over the lid; shake test and table drop before the first real drop"
+  },
+  {
+   "mode": "Canopy tears off the sleeve on a side landing",
+   "likelihood": "low",
+   "mitigation": "Hot glue along all four walls plus a tape tab at each corner; the spare panel and tape splint a crease"
+  },
+  {
+   "mode": "Egg put back rotated or upside down between drops",
+   "likelihood": "low",
+   "mitigation": "N mark on the shell and on the sponge, UP arrow on the pod, line on the floor pad: three visual checks"
+  }
+ ],
+ "sketch_guide": {
+  "views": [
+   {
+    "view": "Top view",
+    "what_to_draw": "A 27 cm square with a 3 cm circle at the centre; four 5.7 cm circles 3.2 cm in from each corner (the bumper cups); a dashed 16 cm square for the sleeve below and four dashed 7.3 cm circles 4 cm in from its corners for the bottom cups.",
+    "key_dimensions": [
+     "27 × 27 cm",
+     "Ø 3 cm vent",
+     "16 cm sleeve",
+     "3.2 cm cup inset"
+    ]
+   },
+   {
+    "view": "Front view",
+    "what_to_draw": "The canopy as a thin 27 cm bar at the top with two cups on it; the 16 cm wide, 12 cm tall sleeve below with the 6 × 9 door in the middle and four side cups as circles; two 9 oz cups under the floor as trapezoids; total height 27.2 cm.",
+    "key_dimensions": [
+     "H = 27.2 cm",
+     "sleeve 16 × 12 cm",
+     "door 6 × 9 cm",
+     "cups 9.3 cm"
+    ]
+   },
+   {
+    "view": "Side view",
+    "what_to_draw": "Same outline as the front without the door; the front and back walls' side cups seen edge-on as trapezoids sticking out 5.5 cm to the canopy edge.",
+    "key_dimensions": [
+     "5.5 cm side cups",
+     "27 cm overall"
+    ]
+   },
+   {
+    "view": "Section A-A",
+    "what_to_draw": "A cut through the middle: the 2 cm pads on floor, ceiling and both walls, the socket ring, the pod with the egg wide end down, and the two bands over the lid; mark the 3 cm clearance from pod to wall pad.",
+    "key_dimensions": [
+     "pads 2 cm",
+     "pod Ø 5.2 × 7 cm",
+     "3 cm clearance"
+    ]
+   }
+  ],
+  "steps": [
+   "Draw the top view first: a 27 cm square, diagonals to find the centre, the 3 cm vent circle.",
+   "Add the four bumper cups as 5.7 cm circles 3.2 cm in from each corner, then the dashed 16 cm sleeve square and the dashed bottom cups.",
+   "Below it draw the front view: a 27 cm bar for the canopy, then the 16 × 12 cm sleeve hanging under its middle.",
+   "Draw the 6 × 9 cm door in the middle of the sleeve and the four side cups as circles 5.2 cm left and right of centre, 3 cm from the top and bottom.",
+   "Draw the two 9 oz cups under the floor corners as trapezoids 9.3 cm tall and the two bumper cups on top; write H = 27.2 cm on a dimension line.",
+   "Draw the section: walls, 2 cm pads all round, the socket ring, the pod, the egg wide end down, two bands over the lid.",
+   "Add dimension lines with arrows for 27, 16, 12, 9.3, 5.5 and 3 cm; write the name, scale 1:2 and date in a title block."
+  ]
+ },
+ "egg_prep": [
+  "Use a large egg at room temperature; check it in the light for hairline cracks and reject any you find.",
+  "Write a small N in pencil on the narrow end and your initials on the wide end.",
+  "Dry the shell; a damp egg slips in the pocket.",
+  "Seat it wide end down in the traced pocket with the N against the N on the sponge, close the lid, band the pod.",
+  "Keep the final egg in its carton until drop 4; use the four test eggs for the ladder."
+ ],
+ "changes_from_panel": [
+  "The judge panel ranked the Flat-Top Lantern Lander first on buildability and clarity but its physics judge found a fatal flaw shared by every hammock design: rubber bands are far too weak to slow a 100 g pod at 7 m/s, so the pod crosses its 'free travel' at full speed and hits a wall or pad. Mk2 therefore seats the pod in a socket on the floor pad, so the egg decelerates with the frame through the cups.",
+  "Cups now cover all six faces (4 × 9 oz below, 4 × 3 oz above, 16 × 3 oz on the walls) and every inner face carries a 2 cm pad, taking the omnidirectional idea from the Hex-Cage concept that scored best on physics.",
+  "The traced sponge pocket, the N mark and the UP arrow come from the Balloon-Cage concept's cradle, which the judges liked for putting the egg back in the same place.",
+  "The sleeve is 12 cm tall instead of 16: with no hammock there is nothing to hang, which saves mass and leaves room for 9.3 cm cups below and 5.5 cm cups above inside the 30 cm limit.",
+  "The balloon-pillow synthesis the panel produced was rejected by all of its own reviewers (pillows cannot carry the energy, build time over 3 h, egg access impossible as written) and is not used."
+ ],
+ "worst_case_statement": "The device may clip the wall and tumble onto a side, an edge, a corner or its top. Every face has its own cups, every inner face a pad, and the egg sits in a sponge pocket at the centre, so the model's peak load stays under the 90 g assumed for a cradled egg in every orientation, with the thinnest margin on a corner.",
+ "cost_statement": "Everything except the cups, a sponge and the eggs comes free from home: a cardboard box, newspaper, an egg carton, rubber bands, tape. A dollar store supplies two bags of paper cups and a sponge. Estimated total about $5.25 if nothing is at home, under $4 with eggs already in the fridge."
+}

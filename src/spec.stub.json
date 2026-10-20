@@ -1,0 +1,724 @@
+{
+ "page_title": "Egg Lander Build Sheet",
+ "project": "Egg drop challenge",
+ "author": "L. Deromedi",
+ "date": "2026-10-19",
+ "name": "STUB Flat-Top Lantern Lander",
+ "tagline": "Stand-in spec used only to test the presentation scaffold.",
+ "summary": "A wide cardboard canopy slows the fall, the egg hangs in the middle on rubber bands, and paper cups under the frame crush on impact.",
+ "why_this_design": [
+  "Large drag area within the envelope",
+  "Egg suspended, never touching the frame",
+  "Cheap and reusable"
+ ],
+ "dims_cm": {
+  "L": 27,
+  "W": 27,
+  "H": 27.4
+ },
+ "volume_cm3": 19974.6,
+ "limits": {
+  "max_side_cm": 30,
+  "max_mass_g": 940
+ },
+ "mass_budget_g": [
+  {
+   "item": "Cardboard canopy",
+   "grams": 60,
+   "note": "single-wall corrugated"
+  },
+  {
+   "item": "Frame: 4 straws + base strips",
+   "grams": 30,
+   "note": ""
+  },
+  {
+   "item": "Egg capsule (paper cup)",
+   "grams": 12,
+   "note": ""
+  },
+  {
+   "item": "4 crumple cups",
+   "grams": 20,
+   "note": ""
+  },
+  {
+   "item": "Rubber bands, tape",
+   "grams": 15,
+   "note": ""
+  },
+  {
+   "item": "Egg",
+   "grams": 58,
+   "note": "large"
+  }
+ ],
+ "total_mass_g": 195,
+ "materials": [
+  {
+   "item": "Cardboard box",
+   "qty": "1",
+   "spec": "single-wall, at least 30 \u00d7 30 cm",
+   "source": "home",
+   "est_mass_g": 90,
+   "est_cost_usd": 0,
+   "purpose": "canopy and base strips"
+  },
+  {
+   "item": "Paper cups",
+   "qty": "6",
+   "spec": "9 oz",
+   "source": "dollar store",
+   "est_mass_g": 30,
+   "est_cost_usd": 1.25,
+   "purpose": "crumple feet + capsule"
+  },
+  {
+   "item": "Rubber bands",
+   "qty": "16",
+   "spec": "#33",
+   "source": "dollar store",
+   "est_mass_g": 10,
+   "est_cost_usd": 1.25,
+   "purpose": "suspension"
+  },
+  {
+   "item": "Drinking straws",
+   "qty": "8",
+   "spec": "standard",
+   "source": "home",
+   "est_mass_g": 6,
+   "est_cost_usd": 0,
+   "purpose": "struts"
+  },
+  {
+   "item": "Packing tape",
+   "qty": "1 roll",
+   "spec": "",
+   "source": "home",
+   "est_mass_g": 10,
+   "est_cost_usd": 0,
+   "purpose": "joints"
+  }
+ ],
+ "total_cost_usd": 2.5,
+ "tools": [
+  "scissors",
+  "ruler",
+  "pencil",
+  "box cutter"
+ ],
+ "components": [
+  {
+   "id": "canopy",
+   "name": "Drag canopy",
+   "shape": "plate",
+   "size_cm": "27 \u00d7 27 \u00d7 0.4, 3 cm vent",
+   "position_cm": {
+    "x": 0,
+    "y": 21.7,
+    "z": 0
+   },
+   "material": "single-wall corrugated",
+   "color_hint": "tan",
+   "role": "drag surface, centre of pressure"
+  },
+  {
+   "id": "cups_top",
+   "name": "Bumper cups \u00d74",
+   "shape": "cone",
+   "size_cm": "\u00d8 5.7/4 \u00d7 5.5",
+   "position_cm": {
+    "x": 0,
+    "y": 24.6,
+    "z": 0
+   },
+   "material": "3 oz paper cup",
+   "color_hint": "white",
+   "role": "crumple for an inverted landing"
+  },
+  {
+   "id": "wall_front",
+   "name": "Sleeve wall, front (door)",
+   "shape": "plate",
+   "size_cm": "16 \u00d7 16, door 8 \u00d7 10",
+   "position_cm": {
+    "x": 0,
+    "y": 13.5,
+    "z": 8
+   },
+   "material": "corrugated",
+   "color_hint": "tan",
+   "role": "frame, side crumple"
+  },
+  {
+   "id": "floor",
+   "name": "Sleeve floor",
+   "shape": "plate",
+   "size_cm": "15.2 \u00d7 15.2 \u00d7 0.4",
+   "position_cm": {
+    "x": 0,
+    "y": 5.7,
+    "z": 0
+   },
+   "material": "corrugated",
+   "color_hint": "tan",
+   "role": "carries the bottom cups"
+  },
+  {
+   "id": "pod",
+   "name": "Egg pod",
+   "shape": "cylinder",
+   "size_cm": "\u00d8 5.2 \u00d7 6.8",
+   "position_cm": {
+    "x": 0,
+    "y": 13.7,
+    "z": 0
+   },
+   "material": "egg-carton cell + sponge",
+   "color_hint": "grey",
+   "role": "positively locates the egg"
+  },
+  {
+   "id": "bands",
+   "name": "Rubber bands \u00d78",
+   "shape": "band",
+   "size_cm": "#33",
+   "position_cm": {
+    "x": 0,
+    "y": 13.7,
+    "z": 0
+   },
+   "material": "rubber",
+   "color_hint": "red",
+   "role": "suspension"
+  },
+  {
+   "id": "cups_bottom",
+   "name": "Crumple cups \u00d74",
+   "shape": "cone",
+   "size_cm": "\u00d8 5.7/4 \u00d7 5.5",
+   "position_cm": {
+    "x": 0,
+    "y": 2.75,
+    "z": 0
+   },
+   "material": "3 oz paper cup",
+   "color_hint": "white",
+   "role": "primary crumple zone"
+  }
+ ],
+ "protection_by_face": [
+  {
+   "face": "Bottom (upright)",
+   "protection": "cups crush, then bands stretch",
+   "stopping_distance_cm": 8,
+   "peak_g": 25,
+   "verdict": "survives"
+  },
+  {
+   "face": "Side",
+   "protection": "bumpers crush, bands stretch sideways",
+   "stopping_distance_cm": 5,
+   "peak_g": 40,
+   "verdict": "survives"
+  },
+  {
+   "face": "Top (upside-down)",
+   "protection": "canopy flexes, bands stretch",
+   "stopping_distance_cm": 4,
+   "peak_g": 48,
+   "verdict": "marginal"
+  },
+  {
+   "face": "Corner",
+   "protection": "one cup + one bumper crush",
+   "stopping_distance_cm": 6,
+   "peak_g": 33,
+   "verdict": "survives"
+  }
+ ],
+ "egg_access": {
+  "open": "Lift the capsule lid.",
+  "seat": "Drop the egg point-down into the marked cup.",
+  "close": "Fold the lid back and clip it.",
+  "seconds": 30,
+  "same_place_feature": "The cup is the cradle; the egg can only sit one way."
+ },
+ "reset_between_drops": [
+  "Inspect cups",
+  "Swap crushed cups",
+  "Re-seat egg",
+  "Re-measure"
+ ],
+ "test_ladder": [
+  {
+   "drop": 1,
+   "height_floors": "1st floor",
+   "height_m": 3.5,
+   "purpose": "orientation and hatch",
+   "pass_criteria": "egg intact, cups lightly crushed",
+   "expected_impact_speed_ms": 5.2
+  },
+  {
+   "drop": 2,
+   "height_floors": "3rd floor",
+   "height_m": 10.5,
+   "purpose": "terminal velocity reached",
+   "pass_criteria": "egg intact",
+   "expected_impact_speed_ms": 5.9
+  },
+  {
+   "drop": 3,
+   "height_floors": "5th floor",
+   "height_m": 17.5,
+   "purpose": "full-speed landing",
+   "pass_criteria": "egg intact",
+   "expected_impact_speed_ms": 5.9
+  },
+  {
+   "drop": 4,
+   "height_floors": "7th floor (final)",
+   "height_m": 25,
+   "purpose": "the real thing",
+   "pass_criteria": "egg intact",
+   "expected_impact_speed_ms": 5.9
+  }
+ ],
+ "spares": [
+  {
+   "item": "Paper cups",
+   "qty_spare": "8",
+   "swap_minutes": 3,
+   "when": "any cup crushed more than half"
+  }
+ ],
+ "build_steps": [
+  {
+   "n": 1,
+   "title": "Cut the canopy",
+   "detail": "Cut a 27 \u00d7 27 cm square of single-wall corrugated. Cut a 3 cm hole dead centre. Tape all four edges.",
+   "minutes": 12,
+   "tools": "ruler, box cutter, tape",
+   "tip": "Cut on a scrap board, flutes in one direction.",
+   "component_ids": [
+    "canopy"
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Cut and fold the sleeve",
+   "detail": "Cut a 64.8 \u00d7 16 cm strip, score three folds, fold into a 16 \u00d7 16 cm tube and glue the tab. Cut the 8 \u00d7 10 cm door 3 cm above the bottom edge of one wall. Glue in a 16 \u00d7 16 cm floor.",
+   "minutes": 20,
+   "tools": "ruler, box cutter, hot glue",
+   "tip": "Score, don't cut, the fold lines.",
+   "component_ids": [
+    "wall_front",
+    "wall_back",
+    "wall_left",
+    "wall_right",
+    "floor"
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Punch the anchor holes",
+   "detail": "Eight holes 1.5 cm in from each vertical corner, 1.5 cm below the top and 1.5 cm above the floor. Push a band through each and slip a 3 cm straw toggle through the loop outside.",
+   "minutes": 10,
+   "tools": "pencil, scissors",
+   "tip": "Number the toggles 1\u20138.",
+   "component_ids": [
+    "toggles"
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Make the pod",
+   "detail": "Cut one egg-carton cell with its lid section, hinge kept. Glue a 1 cm sponge disc into the cell and one into the lid. Mark EGG and WIDE END DOWN.",
+   "minutes": 10,
+   "tools": "scissors, hot glue, marker",
+   "tip": "Trace the egg outline into the sponge.",
+   "component_ids": [
+    "pod",
+    "egg"
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Fit the sock",
+   "detail": "Load a test egg, close the lid, band the pod across the hinge, push it into the sock toe. Mark the UP line on the sock. Make 4 holes below the cuff and 4 at the toe.",
+   "minutes": 8,
+   "tools": "marker, hot glue",
+   "tip": "",
+   "component_ids": [
+    "sock"
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Hang the sock",
+   "detail": "Loop the 4 top bands through the cuff holes and the 4 bottom bands through the toe holes so the pod floats centred with 3 cm above and below and 5 cm to each wall.",
+   "minutes": 12,
+   "tools": "",
+   "tip": "Shorten a sagging band by looping it twice around its toggle.",
+   "component_ids": [
+    "bands"
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Add the pads",
+   "detail": "Fold two 12 \u00d7 12 cm newspaper pads 1.5 cm thick. Tape one to the floor and one to the canopy underside.",
+   "minutes": 6,
+   "tools": "tape",
+   "tip": "",
+   "component_ids": [
+    "pad_floor",
+    "pad_top"
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Glue the sleeve to the canopy",
+   "detail": "Hot-glue the top of the sleeve onto the canopy underside inside the 16 cm square; tape tabs over the joint. Tie a string diagonal across each wall.",
+   "minutes": 10,
+   "tools": "hot glue, tape, string",
+   "tip": "",
+   "component_ids": [
+    "strings"
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Fit the cups",
+   "detail": "Pre-crease 8 cups. Glue 4 mouth-down under the floor corners with a tape collar. Glue 4 base-down on the canopy corners.",
+   "minutes": 12,
+   "tools": "hot glue, tape",
+   "tip": "",
+   "component_ids": [
+    "cups_bottom",
+    "cups_top"
+   ]
+  },
+  {
+   "n": 10,
+   "title": "Check the envelope and weigh",
+   "detail": "27 \u00d7 27 \u00d7 27.4 cm with the ruler; about 275 g with the egg.",
+   "minutes": 5,
+   "tools": "ruler, kitchen scale",
+   "tip": "",
+   "component_ids": []
+  },
+  {
+   "n": 11,
+   "title": "Pack the spares bag",
+   "detail": "8 creased cups, 8 bands, 2 pads, a spare wall panel, tape, marker, spare eggs.",
+   "minutes": 5,
+   "tools": "",
+   "tip": "",
+   "component_ids": []
+  },
+  {
+   "n": 12,
+   "title": "Hand test from 1.5 m",
+   "detail": "Drop onto concrete with a test egg; confirm the pod never touches a wall or pad.",
+   "minutes": 5,
+   "tools": "",
+   "tip": "",
+   "component_ids": []
+  }
+ ],
+ "drop_plan": {
+  "site": "School building stairwell balcony.",
+  "height_floors": "7th floor",
+  "height_m": 25,
+  "roles": [
+   {
+    "role": "Dropper",
+    "task": "Releases the device level."
+   },
+   {
+    "role": "Spotter",
+    "task": "Keeps the zone clear."
+   }
+  ],
+  "sequence": [
+   "Clear the zone",
+   "Call 'dropping'",
+   "Release",
+   "Call 'clear'"
+  ],
+  "release_technique": "Hold the canopy by two opposite edges at arm's length over the rail and open both hands at once.",
+  "orientation_at_release": "Canopy up, level.",
+  "safety": [
+   "Nobody under the drop line.",
+   "Check wind."
+  ],
+  "landing_zone": "A 1.5 m square marked with chalk directly below the release point."
+ },
+ "physics": {
+  "design_height_m": 25,
+  "no_drag_impact_speed_ms": 22.1,
+  "mass_kg": 0.195,
+  "drag_area_m2": 0.0729,
+  "cd": 1.15,
+  "terminal_velocity_ms": 6.2,
+  "expected_impact_speed_ms": 6.2,
+  "time_to_impact_s": 4.6,
+  "stopping_distance_m": 0.08,
+  "peak_decel_g": 25,
+  "worst_case_orientation": "Lands on a corner after tumbling",
+  "worst_case_impact_speed_ms": 9,
+  "worst_case_stopping_distance_m": 0.05,
+  "worst_case_peak_decel_g": 48,
+  "egg_tolerance_assumption_g": 60,
+  "safety_factor": 2.4,
+  "worst_case_safety_factor": 1.25,
+  "explanation": [
+   "v = sqrt(2 \u00d7 9.81 \u00d7 25) = 22.1 m/s",
+   "v_t = sqrt(2 \u00d7 0.195 \u00d7 9.81 / (1.2 \u00d7 1.15 \u00d7 0.0729)) = 6.2 m/s",
+   "a = 6.2\u00b2 / (2 \u00d7 0.08) = 240 m/s\u00b2 = 24.5 g"
+  ],
+  "worst_case_explanation": [
+   "Tumbling area \u2248 0.035 m\u00b2, v_t \u2248 9 m/s",
+   "a = 9\u00b2 / (2 \u00d7 0.05) = 810 m/s\u00b2 = 83 g average\u2026 stub numbers"
+  ]
+ },
+ "compliance": [
+  {
+   "rule": "1",
+   "requirement": "Sketch the design",
+   "our_value": "Sheet 05",
+   "pass": true
+  },
+  {
+   "rule": "2",
+   "requirement": "Measure L, W, H and compute volume",
+   "our_value": "27 \u00d7 27 \u00d7 28 cm = 20,412 cm\u00b3",
+   "pass": true
+  },
+  {
+   "rule": "3",
+   "requirement": "Every side < 30 cm",
+   "our_value": "max 28 cm",
+   "pass": true
+  },
+  {
+   "rule": "4",
+   "requirement": "Mass \u2264 940 g",
+   "our_value": "195 g",
+   "pass": true
+  },
+  {
+   "rule": "5",
+   "requirement": "Full materials list",
+   "our_value": "Sheet 08",
+   "pass": true
+  }
+ ],
+ "test_protocol": [
+  "Table drop from 1 m",
+  "Shake test",
+  "Hatch cycle \u00d75"
+ ],
+ "failure_modes": [
+  {
+   "mode": "Bands snap",
+   "likelihood": "low",
+   "mitigation": "Double bands"
+  },
+  {
+   "mode": "Tumbles",
+   "likelihood": "medium",
+   "mitigation": "Side bumpers"
+  }
+ ],
+ "sketch_guide": {
+  "views": [
+   {
+    "view": "Top",
+    "what_to_draw": "27 cm square with a vent circle",
+    "key_dimensions": [
+     "27 cm",
+     "27 cm",
+     "\u00d8 4 cm"
+    ]
+   },
+   {
+    "view": "Front",
+    "what_to_draw": "plate, struts, capsule, cups",
+    "key_dimensions": [
+     "28 cm",
+     "5 cm cups"
+    ]
+   }
+  ],
+  "steps": [
+   "Draw the 27 cm square",
+   "Add the vent",
+   "Draw the frame",
+   "Hang the capsule",
+   "Add cups",
+   "Label dimensions"
+  ]
+ },
+ "egg_prep": [
+  "Use a large egg at room temperature.",
+  "Mark the top with a pen."
+ ],
+ "final_checklist": [
+  "Measure all three sides",
+  "Weigh it",
+  "Egg seated and lid closed",
+  "Zone clear"
+ ],
+ "alternatives": [
+  {
+   "name": "Space frame",
+   "approach": "space-frame",
+   "total_mass_g": 160,
+   "total_cost_usd": 3,
+   "worst_case_peak_decel_g": 45,
+   "panel_score": 22.5,
+   "why_not": "Harder to draw"
+  }
+ ],
+ "worst_case_statement": "The device may tumble and land on any face; every face has a crush path and the egg cannot reach a hard part.",
+ "cost_statement": "Everything comes from a cardboard box at home plus a dollar-store run under $3.",
+ "measure_how": [
+  "Put the device on a table.",
+  "Measure the widest point of each side with a tape, including anything that sticks out.",
+  "Multiply the three numbers."
+ ],
+ "site": {
+  "floors": 7,
+  "keepout_m": 4
+ },
+ "sim": {
+  "crumple_m": 0.04,
+  "suspension_m": 0.045,
+  "static_sag_cm": 1.0,
+  "pulse_shape": "half-sine"
+ },
+ "geometry": {
+  "canopy": {
+   "w": 27,
+   "d": 27,
+   "t": 0.4,
+   "vent_r": 1.5
+  },
+  "sleeve": {
+   "w": 16,
+   "d": 16,
+   "h": 16,
+   "t": 0.4,
+   "door": {
+    "w": 8,
+    "h": 10,
+    "bottom_offset": 3
+   }
+  },
+  "cups": {
+   "h": 5.5,
+   "r_mouth": 2.85,
+   "r_base": 2.0,
+   "inset": 3.0,
+   "top_inset": 3.2,
+   "crush_to": 0.27
+  },
+  "pads": {
+   "w": 12,
+   "d": 12,
+   "t": 1.5
+  },
+  "anchors": {
+   "inset": 1.5,
+   "from_top": 1.5,
+   "from_floor": 1.5,
+   "toggle_len": 3
+  },
+  "pod": {
+   "w": 5.2,
+   "h": 6.8,
+   "cell_h": 3.6
+  },
+  "sponge_t": 1.0,
+  "sock": {
+   "r": 3.4,
+   "h": 10
+  },
+  "egg": {
+   "len": 6,
+   "dia": 4.5
+  },
+  "bands": {
+   "r": 0.15
+  },
+  "explode_cm": 9,
+  "labels": [
+   {
+    "id": "canopy",
+    "text": "Drag canopy 27 \u00d7 27 cm \u00b7 3 cm vent",
+    "at": [
+     9,
+     0.4,
+     9
+    ]
+   },
+   {
+    "id": "cups_top",
+    "text": "Bumper cups \u00d74 for an upside-down landing",
+    "at": [
+     10.3,
+     5.5,
+     -10.3
+    ]
+   },
+   {
+    "id": "wall_front",
+    "text": "Sleeve 16 \u00d7 16 \u00d7 16 cm \u00b7 door 8 \u00d7 10 cm",
+    "at": [
+     6.5,
+     14.5,
+     0
+    ]
+   },
+   {
+    "id": "sock",
+    "text": "Sock hammock on 8 rubber bands",
+    "at": [
+     3.4,
+     3,
+     0
+    ]
+   },
+   {
+    "id": "cups_bottom",
+    "text": "Crumple cups \u00d74 \u00b7 swapped from spares",
+    "at": [
+     5,
+     1,
+     5
+    ]
+   },
+   {
+    "id": "toggles",
+    "text": "Straw toggles anchor the bands outside",
+    "at": [
+     6.5,
+     20,
+     8.3
+    ]
+   },
+   {
+    "id": "pad_floor",
+    "text": "Newspaper pad 1.5 cm",
+    "at": [
+     -6,
+     0.75,
+     0
+    ]
+   }
+  ]
+ }
+}
